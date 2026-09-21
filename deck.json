@@ -1,0 +1,5227 @@
+[
+ {
+  "slide": 1,
+  "shapes": [
+   {
+    "name": "Text Placeholder 3",
+    "type": "PLACEHOLDER (14)",
+    "left": 603751,
+    "top": 1601238,
+    "w": 5781007,
+    "h": 307777,
+    "kind": "text",
+    "text": "Subtitle"
+   },
+   {
+    "name": "Text Placeholder 4",
+    "type": "PLACEHOLDER (14)",
+    "left": 555625,
+    "top": 919163,
+    "w": 8242300,
+    "h": 553998,
+    "kind": "text",
+    "text": "Agent 365 초기 설정 및 사용 가이드"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 2,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 499139,
+    "top": 634410,
+    "w": 6949114,
+    "h": 3142399,
+    "kind": "text",
+    "text": "전체 목차\u000b\u000b0. 에이전트 생성\u000b1. 에이전트 승인 및 전사 배포\u000b2. 에이전트 인벤토리 확인\u000b3. 에이전트 차단\u000b4. 에이전트에 대한 조건부 접근제어\u000b5. 에이전트 리스크 탐지\u000b6. 에이전트 런타임 보호\u000b7. 에이전트 트래픽 모니터링"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 3,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "0. 에이전트 생성"
+   },
+   {
+    "name": "표 3",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 11033641,
+    "h": 4472426,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정/확인 위치",
+      ""
+     ],
+     [
+      "1",
+      "환경·권한 준비",
+      "New Copilot Studio > 환경 선택기",
+      "Power platform 환경·역할 확인"
+     ],
+     [
+      "2",
+      "빈 에이전트 생성",
+      "Agents > New agent > 이름·지침 입력 > Save\nNew experience 유지; Agent365-Guide-Demo로 생성",
+      ""
+     ],
+     [
+      "3",
+      "지침·오케스트레이션",
+      "Build > Instructions / Model / … > Settings > AI & behavior\n새 UI의 모델·행동 설정 확인; 기존 생성형 토글과 구분",
+      ""
+     ],
+     [
+      "4",
+      "지식 추가",
+      "… > Settings > Safety & access / Build > Add knowledge\n필요한 지식 추가",
+      ""
+     ],
+     [
+      "5",
+      "도구 구성",
+      "Build > Add tool > Model Context Protocol (MCP) 등\n필요한 도구 연결",
+      ""
+     ],
+     [
+      "6",
+      "테스트",
+      "Preview\n도구 호출 확인 등",
+      ""
+     ],
+     [
+      "7",
+      "게시·채널 연결",
+      "게시 > 채널 > Teams 및 Microsoft 365 Copilot\n에이전트 게시 및 채널 추가",
+      ""
+     ],
+     [
+      "8",
+      "관리자 승인 제출",
+      "채널 > 가용성 옵션 > 내 조직의 모든 사람에게 표시\n관리자 승인을 위해 제출 > 예 > 새로 고침으로 요청 상태 확인",
+      ""
+     ]
+    ]
+   }
+  ],
+  "notes": "https://chichoi1991.github.io/Agent_Blog/chapters/newcs3-handson/"
+ },
+ {
+  "slide": 4,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 276999,
+    "kind": "text",
+    "text": "0-1. 환경·권한 준비 — 실습 환경 선택"
+   },
+   {
+    "name": "ch0-environment.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2212848,
+    "top": 4459986,
+    "w": 1680210,
+    "h": 213360,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 5,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-2. 빈 에이전트 생성 — New agent"
+   },
+   {
+    "name": "ch0-new-agent.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 9387078,
+    "top": 1803654,
+    "w": 597408,
+    "h": 197358,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 6,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 307777,
+    "kind": "text",
+    "text": "0-3. 에이전트 이름·지침·모델 설정"
+   },
+   {
+    "name": "ch0-settings-menu.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2895600,
+    "top": 1600962,
+    "w": 2827020,
+    "h": 346710,
+    "kind": "other"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2346198,
+    "top": 2459736,
+    "w": 5574030,
+    "h": 640080,
+    "kind": "other"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 9269730,
+    "top": 1456944,
+    "w": 960120,
+    "h": 181356,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2653284,
+    "top": 1573530,
+    "w": 210312,
+    "h": 210312,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2103882,
+    "top": 2432304,
+    "w": 210312,
+    "h": 210312,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 9027414,
+    "top": 1429512,
+    "w": 210312,
+    "h": 210312,
+    "kind": "text",
+    "text": "3"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 7,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 307777,
+    "kind": "text",
+    "text": "0-4. 지식 추가"
+   },
+   {
+    "name": "ch0-knowledge-picker.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4095750,
+    "top": 3707892,
+    "w": 3976832,
+    "h": 1021126,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 8,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 307777,
+    "kind": "text",
+    "text": "0-5. 도구 구성 "
+   },
+   {
+    "name": "ch0-native-mcp-catalog.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Click or inspect target",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4074414,
+    "top": 2576945,
+    "w": 3951986,
+    "h": 2493819,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 9,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 307777,
+    "kind": "text",
+    "text": "0-6. 테스트"
+   },
+   {
+    "name": "ch0-workiq-result.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 10,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-7. 에이전트 게시 — 채널 추가 시작"
+   },
+   {
+    "name": "ch1-publish-dialog.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4559808,
+    "top": 3558540,
+    "w": 698754,
+    "h": 165354,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 11,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-7. 에이전트 게시 — Teams + Microsoft 365"
+   },
+   {
+    "name": "ch1-channel-picker.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4090416,
+    "top": 2219706,
+    "w": 1973580,
+    "h": 245364,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 12,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-7. 에이전트 게시 — 사용 채널 선택"
+   },
+   {
+    "name": "ch1-channel-availability.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5242560,
+    "top": 2497074,
+    "w": 2373630,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4981956,
+    "top": 2497074,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7536180,
+    "top": 4892040,
+    "w": 560070,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7275576,
+    "top": 4892040,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 13,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-7. 에이전트 게시 — 게시 완료"
+   },
+   {
+    "name": "ch1-published.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "Teams + Microsoft 365 채널 게시가 완료된 상태이며, 아직 조직 카탈로그 승인·전사 배포 완료를 뜻하지 않습니다."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 14,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-8. 관리자 승인 제출 "
+   },
+   {
+    "name": "ch1-submit-entry.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4090416,
+    "top": 2625090,
+    "w": 981456,
+    "h": 256032,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3829812,
+    "top": 2625090,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5242560,
+    "top": 2923794,
+    "w": 1013460,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4981956,
+    "top": 2923794,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 15,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-8. 관리자 승인 제출 — 제출 전 검토"
+   },
+   {
+    "name": "ch1-submit-review.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4090416,
+    "top": 4379976,
+    "w": 874776,
+    "h": 170688,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 16,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-8. 관리자 승인 제출 — 조직 공개 확인"
+   },
+   {
+    "name": "ch1-submit-confirm.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6394704,
+    "top": 3521202,
+    "w": 613410,
+    "h": 202692,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 17,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "0-8. 관리자 승인 제출 — 승인 대기"
+   },
+   {
+    "name": "ch1-submitted.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4137892,
+    "top": 1985818,
+    "w": 3870036,
+    "h": 951346,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 18,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "1. 에이전트 승인 및 전사 배포"
+   },
+   {
+    "name": "표 3",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 11033641,
+    "h": 2426230,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택",
+      "AI 관리자 추가"
+     ],
+     [
+      "1",
+      "관리자 승인 ",
+      "AI 관리자: Microsoft 365 관리 센터 > 에이전트 > 모든 에이전트 > 요청",
+      "제작자·업무 목적·지식·도구·요청 권한 검토; 필요 시 제출 거부"
+     ],
+     [
+      "2",
+      "전사 배포 ",
+      "요청 상세 > 저장소에 게시 > 대상 지정 > 권한 검토 > 게시",
+      "설치 가능·사전 설치 대상 구분, 요청 권한에 맞는 관리자 동의 수행"
+     ],
+     [
+      "4",
+      "사용자 실행·갱신",
+      "Teams / Microsoft 365 Copilot / 에이전트 > 설정 > 사용자 액세스",
+      "일반 사용자 실행 확인, 내용 수정 후 재게시·상세 정보 변경 시 재승인 확인"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 19,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-1. 관리자 승인 — 요청 목록"
+   },
+   {
+    "name": "ch1-admin-request.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4314444,
+    "top": 2038350,
+    "w": 224028,
+    "h": 234696,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4053840,
+    "top": 2038350,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3578352,
+    "top": 3281172,
+    "w": 1920240,
+    "h": 352044,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3317748,
+    "top": 3281172,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "Microsoft 365 관리 센터 > 에이전트 > 모든 에이전트 > 요청으로 이동합니다"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 20,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-1. 관리자 승인 — 게시 마법사 시작"
+   },
+   {
+    "name": "ch1-admin-review.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8501634,
+    "top": 1488948,
+    "w": 1024128,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8241030,
+    "top": 1488948,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "요청 상세에서 화면에 표시된 Microsoft Store에 게시 버튼을 선택합니다."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 21,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-2. 전사 배포 — 게시·미리 설치 대상"
+   },
+   {
+    "name": "ch1-admin-audience.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5994654,
+    "top": 3467862,
+    "w": 960120,
+    "h": 144018,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5734050,
+    "top": 3467862,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5994654,
+    "top": 4652010,
+    "w": 960120,
+    "h": 144018,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5734050,
+    "top": 4652010,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6368034,
+    "top": 5574792,
+    "w": 314706,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6107430,
+    "top": 5574792,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 22,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-2. 전사 배포 — 정책 템플릿 확인"
+   },
+   {
+    "name": "ch1-admin-template.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5994654,
+    "top": 2502408,
+    "w": 1600200,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 23,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-2. 전사 배포 — 권한 검토"
+   },
+   {
+    "name": "ch1-admin-permissions.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5994654,
+    "top": 2027682,
+    "w": 1706880,
+    "h": 250698,
+    "kind": "other"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "1 이 게시 마법사에서는 필요한 권한 없음으로 표시됐습니다. 내용을 확인한 뒤 다음으로 이동합니다.\n이는 에이전트의 모든 MCP 도구가 무권한으로 실행된다는 뜻이 아닙니다. 도구별 인증·동의는 별도로 적용됩니다."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 24,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-2. 전사 배포 — 최종 검토"
+   },
+   {
+    "name": "ch1-admin-final-review.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6368034,
+    "top": 5574792,
+    "w": 314706,
+    "h": 170688,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 25,
+  "shapes": [
+   {
+    "name": "Chapter 1 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "1-2 전사 배포 — 관리자 처리 완료"
+   },
+   {
+    "name": "ch1-admin-deployed.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5994654,
+    "top": 1686306,
+    "w": 3563112,
+    "h": 218694,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 26,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "2. 에이전트 인벤토리 확인"
+   },
+   {
+    "name": "표 8",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 10896844,
+    "h": 2426230,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택",
+      "AI 읽기 권한자 추가"
+     ],
+     [
+      "1",
+      "Registry 조회",
+      "Microsoft 365 관리 센터\n에이전트 > 모든 에이전트 > 레지스트리",
+      "Platform = Copilot Studio로 필터링\n이름·상태·채널 조회; 등록 ≠ 실제 사용"
+     ],
+     [
+      "2",
+      "구성 확인",
+      "에이전트 상세 > 세부 정보\n사용자 / 데이터 & 도구 / 권한 등 확인",
+      "소유자·지식·도구·권한·설치 대상 확인\nData & tools 변경은 Copilot Studio에서"
+     ],
+     [
+      "3",
+      "실제 사용 확인",
+      "에이전트 상세 > 세부 정보 > 활성 / Copilot Studio > 모니터\n조회 기간 / 활성 사용자 보기",
+      "게시 채널의 세션·활성 사용자 확인\n테스트 패널 활동 제외, 기본 시간은 UTC 기준"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 27,
+  "shapes": [
+   {
+    "name": "Chapter 2 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "2-1. 인벤토리 조회 — 레지스트리 진입"
+   },
+   {
+    "name": "ch2-registry-entry.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1914144,
+    "top": 2481072,
+    "w": 1322832,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1653540,
+    "top": 2481072,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3578352,
+    "top": 2043684,
+    "w": 426720,
+    "h": 234696,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3317748,
+    "top": 2043684,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 28,
+  "shapes": [
+   {
+    "name": "Chapter 2 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "2-2. 구성 확인 — 채널·담당자·Entra ID"
+   },
+   {
+    "name": "ch2-details.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 29,
+  "shapes": [
+   {
+    "name": "Chapter 2 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "2-3. 실제 사용 확인 — M365 관리 센터"
+   },
+   {
+    "name": "ch2-registry-activity.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7546848,
+    "top": 1947672,
+    "w": 266700,
+    "h": 234696,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7286244,
+    "top": 1947672,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5562600,
+    "top": 2305050,
+    "w": 832104,
+    "h": 128016,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5301996,
+    "top": 2305050,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 30,
+  "shapes": [
+   {
+    "name": "Chapter 2 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "2-3. 실제 사용 확인 — Copilot Studio"
+   },
+   {
+    "name": "ch2-monitor-overview.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7200138,
+    "top": 1062228,
+    "w": 501396,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6939534,
+    "top": 1062228,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7941564,
+    "top": 1414272,
+    "w": 1493520,
+    "h": 165354,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7680960,
+    "top": 1414272,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 31,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "3. 에이전트 차단"
+   },
+   {
+    "name": "표 8",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 10896844,
+    "h": 2426230,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택",
+      "AI 관리자, 에이전트 ID 관리차 추가"
+     ],
+     [
+      "1",
+      "에이전트 차단 실행",
+      "에이전트 상세 > 차단\n에이전트 차단 > 저장",
+      "저장 후 차단 상태 확인\n삭제·ID 인증 중지와 구분"
+     ],
+     [
+      "2",
+      "차단 결과 확인",
+      "일반 사용자 Teams\nMicrosoft 365 Copilot",
+      "기존 진입점·새 설치·새 대화 확인\n채널별 실제 사용 불가 상태 기록"
+     ],
+     [
+      "3",
+      "차단 해제·복구",
+      "에이전트 상세 > 차단 해제\n에이전트 차단 해제 > 저장 ",
+      "설치·가용성 범위와 정상 실행 재확인"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 32,
+  "shapes": [
+   {
+    "name": "Chapter 3 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "3-1. 에이전트 차단 실행\n"
+   },
+   {
+    "name": "ch3-before-block.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 9125712,
+    "top": 1488948,
+    "w": 410718,
+    "h": 165354,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 33,
+  "shapes": [
+   {
+    "name": "ch3-block-confirm.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5268117,
+    "top": 1950836,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5519928,
+    "top": 2097024,
+    "w": 592074,
+    "h": 138684,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5213488,
+    "top": 5430364,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5477256,
+    "top": 5574792,
+    "w": 512064,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Chapter 3 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "3-1. 에이전트 차단 실행\n"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 34,
+  "shapes": [
+   {
+    "name": "Chapter 3 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "3-2. 차단 결과 확인"
+   },
+   {
+    "name": "ch3-blocked.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5967984,
+    "top": 1696974,
+    "w": 309372,
+    "h": 112014,
+    "kind": "other"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5519928,
+    "top": 1985010,
+    "w": 4592574,
+    "h": 170688,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 35,
+  "shapes": [
+   {
+    "name": "Chapter 3 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "3-2. 차단 결과 확인"
+   },
+   {
+    "name": "그림 6",
+    "type": "PICTURE (13)",
+    "left": 594686,
+    "top": 1210200,
+    "w": 10999580,
+    "h": 4437599,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3691128,
+    "top": 5176617,
+    "w": 2296434,
+    "h": 388913,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 36,
+  "shapes": [
+   {
+    "name": "Chapter 3 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "3-3. 차단 해제"
+   },
+   {
+    "name": "ch3-blocked.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8966160,
+    "top": 1430274,
+    "w": 564701,
+    "h": 275434,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 37,
+  "shapes": [
+   {
+    "name": "Chapter 3 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "3-3. 차단 해제"
+   },
+   {
+    "name": "ch3-restore-confirm.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5268116,
+    "top": 1950836,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5519928,
+    "top": 2097024,
+    "w": 752094,
+    "h": 138684,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5213488,
+    "top": 5447947,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5477256,
+    "top": 5574792,
+    "w": 512064,
+    "h": 170688,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 38,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "4. 에이전트에 대한 조건부 접근제어"
+   },
+   {
+    "name": "표 8",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 10896844,
+    "h": 1914681,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택",
+      "조건부 액세스 관리자 추가"
+     ],
+     [
+      "1",
+      "대상 정책 생성",
+      "조건부 액세스 > 정책 > 새 정책\n에이전트 / 대상 리소스 / 권한 부여",
+      "Agent ID·실제 커넥터 리소스 지정"
+     ],
+     [
+      "2",
+      "정책 평가 확인",
+      "Teams에서 에이전트 및 커넥터 실행\nEntra > 모니터링 및 상태 > 로그인 로그",
+      "Agent ID·리소스·시각·CA 결과 대조\n(Report-only는 실제 차단하지 않음)"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 39,
+  "shapes": [
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-1. 대상 정책 생성"
+   },
+   {
+    "name": "그림 13",
+    "type": "PICTURE (13)",
+    "left": 1906448,
+    "top": 1448148,
+    "w": 7690133,
+    "h": 4368103,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1921611,
+    "top": 5235542,
+    "w": 1505079,
+    "h": 242894,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1645844,
+    "top": 5208962,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5242040,
+    "top": 2316956,
+    "w": 715125,
+    "h": 166640,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4990962,
+    "top": 2348437,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 40,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1240517,
+    "top": 914400,
+    "w": 9902990,
+    "h": 5645225,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-1. 대상 정책 생성 — 할당"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3488310,
+    "top": 2741147,
+    "w": 2156709,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3227707,
+    "top": 2741147,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3488309,
+    "top": 3312367,
+    "w": 2156709,
+    "h": 457200,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3227707,
+    "top": 3365249,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5824075,
+    "top": 2855447,
+    "w": 2069624,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7925565,
+    "top": 2745895,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Step 4",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7925565,
+    "top": 3365249,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "4"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5823186,
+    "top": 3332851,
+    "w": 2069624,
+    "h": 1077308,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 41,
+  "shapes": [
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-1. 대상 정책 생성 — 대상 리소스"
+   },
+   {
+    "name": "그림 7",
+    "type": "PICTURE (13)",
+    "left": 1371070,
+    "top": 1174149,
+    "w": 9363753,
+    "h": 5310908,
+    "kind": "picture"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3199204,
+    "top": 3880801,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3469836,
+    "top": 3894258,
+    "w": 2081219,
+    "h": 457200,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5429120,
+    "top": 3406162,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5713137,
+    "top": 3410145,
+    "w": 1960111,
+    "h": 941313,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 42,
+  "shapes": [
+   {
+    "name": "그림 29",
+    "type": "PICTURE (13)",
+    "left": 1025236,
+    "top": 914400,
+    "w": 9896618,
+    "h": 5547778,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-1. 대상 정책 생성 — 조건"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3042185,
+    "top": 4250256,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3312817,
+    "top": 4263713,
+    "w": 2156709,
+    "h": 457200,
+    "kind": "other"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5594201,
+    "top": 2384521,
+    "w": 2069625,
+    "h": 737369,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5332462,
+    "top": 2384521,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8387550,
+    "top": 1960167,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Step 4",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8387550,
+    "top": 2536150,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "4"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8667986,
+    "top": 1960167,
+    "w": 993250,
+    "h": 219615,
+    "kind": "other"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8667986,
+    "top": 2613121,
+    "w": 485250,
+    "h": 815879,
+    "kind": "other"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8616149,
+    "top": 6115813,
+    "w": 703341,
+    "h": 284987,
+    "kind": "other"
+   },
+   {
+    "name": "Step 4",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8354880,
+    "top": 6029706,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "5"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 43,
+  "shapes": [
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-1. 대상 정책 생성 — 액세스 제어"
+   },
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1161588,
+    "top": 1035718,
+    "w": 9691140,
+    "h": 5480536,
+    "kind": "picture"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3060658,
+    "top": 5136947,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8325043,
+    "top": 2281515,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8621804,
+    "top": 2290500,
+    "w": 993250,
+    "h": 219615,
+    "kind": "other"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3368236,
+    "top": 5114988,
+    "w": 2156709,
+    "h": 457200,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8330210,
+    "top": 6114891,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8616150,
+    "top": 6171949,
+    "w": 647924,
+    "h": 219615,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 44,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1247176,
+    "top": 1089437,
+    "w": 9356170,
+    "h": 5311363,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-1. 대상 정책 생성 — 최종 생성"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3369287,
+    "top": 5827606,
+    "w": 1535222,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3099447,
+    "top": 5814745,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3099447,
+    "top": 6101029,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3369287,
+    "top": 6069856,
+    "w": 583877,
+    "h": 228600,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 45,
+  "shapes": [
+   {
+    "name": "그림 7",
+    "type": "PICTURE (13)",
+    "left": 969093,
+    "top": 1103879,
+    "w": 9513889,
+    "h": 5370944,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-2. 정책 평가 확인 — 대상 에이전트 확인"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 969093,
+    "top": 4179027,
+    "w": 1913444,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 699253,
+    "top": 4166166,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5028264,
+    "top": 4296053,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5298104,
+    "top": 4264879,
+    "w": 4742879,
+    "h": 259773,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 46,
+  "shapes": [
+   {
+    "name": "그림 14",
+    "type": "PICTURE (13)",
+    "left": 1270000,
+    "top": 956969,
+    "w": 9652000,
+    "h": 5501639,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-2. 정책 평가 확인 — 로그인 로그"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1457360,
+    "top": 3119979,
+    "w": 1535222,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1187520,
+    "top": 3080991,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5629156,
+    "top": 2704009,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5898996,
+    "top": 2672835,
+    "w": 990277,
+    "h": 259773,
+    "kind": "other"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4127863,
+    "top": 3429000,
+    "w": 6113417,
+    "h": 925286,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3858023,
+    "top": 3429000,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 47,
+  "shapes": [
+   {
+    "name": "그림 16",
+    "type": "PICTURE (13)",
+    "left": 1431875,
+    "top": 1108555,
+    "w": 9325202,
+    "h": 5292245,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 4 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "4-2. 정책 평가 확인 — 로그인 로그"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4488069,
+    "top": 1902063,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4488069,
+    "top": 5401488,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4753180,
+    "top": 1910075,
+    "w": 532924,
+    "h": 259773,
+    "kind": "other"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4753180,
+    "top": 5405845,
+    "w": 4887209,
+    "h": 343600,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 48,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "5. 에이전트 리스크 탐지"
+   },
+   {
+    "name": "표 8",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 10896844,
+    "h": 2426230,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Purview 포털 > 설정 > 역할 및 범위 > 역할 그룹",
+      "내부자 위험 관리 분석가 추가\n또는 내부자 위험 관리 조사자 역할 추가"
+     ],
+     [
+      "1",
+      "감사 준비",
+      "감사 > 감사 수집 상태",
+      "감사 수집 활성 상태 확인"
+     ],
+     [
+      "2",
+      "에이전트 정책 생성",
+      "내부 위험 관리 > 정책 > 에이전트 정책\n커스텀 에이전트 정책 생성",
+      ""
+     ],
+     [
+      "3",
+      "에이전트 경고 확인",
+      "내부 위험 관리 > 에이전트 > 경고",
+      "대상 에이전트·심각도·활동 순서 확인"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 49,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-1. 감사 준비 — 활성화 상태 확인"
+   },
+   {
+    "name": "ch5-audit-search.png",
+    "type": "PICTURE (13)",
+    "left": 1149532,
+    "top": 928116,
+    "w": 9729216,
+    "h": 5472684,
+    "kind": "picture"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 1149532,
+    "top": 6528816,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "감사 로그가 꺼져 있으면 IRM 정책이 설정돼 있어도 분석할 활동 이벤트 자체가 없어서 지표·경고가 생성되지 않음"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1149532,
+    "top": 3312414,
+    "w": 409302,
+    "h": 352044,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 50,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성"
+   },
+   {
+    "name": "ch5-agent-policies.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1828800,
+    "top": 3076956,
+    "w": 357051,
+    "h": 352044,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1568196,
+    "top": 3076956,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4407299,
+    "top": 1840121,
+    "w": 756884,
+    "h": 213360,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4146695,
+    "top": 1840121,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3797046,
+    "top": 2683764,
+    "w": 672084,
+    "h": 213360,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3536442,
+    "top": 2683764,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "4"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2177141,
+    "top": 2594502,
+    "w": 672085,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1925247,
+    "top": 2577084,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 51,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 정책 템플릿"
+   },
+   {
+    "name": "ch5-risk-template.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4423299,
+    "top": 5554652,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 52,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 정책 이름"
+   },
+   {
+    "name": "ch5-policy-name.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4485132,
+    "top": 2315718,
+    "w": 5312664,
+    "h": 181356,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4224528,
+    "top": 2315718,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4485132,
+    "top": 2868712,
+    "w": 5312664,
+    "h": 956528,
+    "kind": "other"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4832604,
+    "top": 5554652,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4224528,
+    "top": 2849009,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4537386,
+    "top": 5529837,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 53,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 정책 적용 에이전트 선택"
+   },
+   {
+    "name": "ch5-agent-scope.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4485132,
+    "top": 2305050,
+    "w": 1226820,
+    "h": 144018,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4224528,
+    "top": 2305050,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "현재 UI는 1 모든 에이전트가 선택돼 있고 2 특정 에이전트는 비활성화되어 있습니다.\n사용자의 실제 생성 요청에 따라 모든 에이전트 범위로 제출했습니다. 정책 이름에 Demo가 있어도 단일 에이전트 범위는 아닙니다."
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4832604,
+    "top": 5554652,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4537386,
+    "top": 5529837,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 54,
+  "shapes": [
+   {
+    "name": "그림 15",
+    "type": "PICTURE (13)",
+    "left": 1915774,
+    "top": 987552,
+    "w": 8447426,
+    "h": 4562199,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 콘텐츠 우선순위 설정"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4537385,
+    "top": 2672947,
+    "w": 2910979,
+    "h": 1330881,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4276782,
+    "top": 2672948,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4974646,
+    "top": 5322360,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4679428,
+    "top": 5297545,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 55,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1931206,
+    "top": 987552,
+    "w": 8431994,
+    "h": 4587240,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 콘텐츠 우선순위 설정"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2111702,
+    "top": 3080551,
+    "w": 1954271,
+    "h": 1819923,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6848134,
+    "top": 2878585,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7055470,
+    "top": 5345808,
+    "w": 455038,
+    "h": 158348,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6794866,
+    "top": 5319174,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "앞서 선택한 콘텐츠들에 대해 각각 우선순위 세부 컨텐츠 추가 설정"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7148893,
+    "top": 2884665,
+    "w": 2865119,
+    "h": 2369325,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4310598,
+    "top": 2543725,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4583587,
+    "top": 2566660,
+    "w": 1512414,
+    "h": 197906,
+    "kind": "other"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4986501,
+    "top": 5334342,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4691283,
+    "top": 5309527,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "4"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 56,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987553,
+    "w": 8894435,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 알림 생성 범위 설정"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4577137,
+    "top": 2658625,
+    "w": 4051957,
+    "h": 333150,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4316534,
+    "top": 2658625,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5075279,
+    "top": 5559554,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4780061,
+    "top": 5534739,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 57,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 이벤트 트리거"
+   },
+   {
+    "name": "ch5-trigger-events.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4623816,
+    "top": 3222498,
+    "w": 4267200,
+    "h": 1200150,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4363212,
+    "top": 3222498,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4834776,
+    "top": 5559553,
+    "w": 375122,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4539558,
+    "top": 5534738,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 58,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 482477,
+    "top": 1806347,
+    "w": 5483687,
+    "h": 3004296,
+    "kind": "picture"
+   },
+   {
+    "name": "그림 13",
+    "type": "PICTURE (13)",
+    "left": 6225837,
+    "top": 1806347,
+    "w": 5540233,
+    "h": 3004296,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 트리거 임계값"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2144592,
+    "top": 3079894,
+    "w": 972421,
+    "h": 140633,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1871766,
+    "top": 3053562,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2144592,
+    "top": 3300766,
+    "w": 1345063,
+    "h": 1322992,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1871766,
+    "top": 3484636,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8210064,
+    "top": 4642481,
+    "w": 319842,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7930636,
+    "top": 4623758,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 1338072,
+    "top": 5459809,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "초반에는 알림 확인을 위해 임계값을 최대한 낮게 지정하고, 점차 올려가며 사내 환경에 맞게 적용"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 59,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 검토"
+   },
+   {
+    "name": "ch5-indicators.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "표시기 단계에서 선택한 총 표시기 4/4와 에이전트 지표 분류를 확인합니다.\n현재 화면은 범주를 펼친 상태입니다. 선택된 표시기에 대한 실제 이벤트 수집·탐지 여부는 경고 및 활동 증거로 별도 확인합니다."
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4863183,
+    "top": 5559552,
+    "w": 319842,
+    "h": 228600,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 60,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-4. 탐지 옵션 — 위험 점수 부스터"
+   },
+   {
+    "name": "ch5-detection-options.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4485132,
+    "top": 2401062,
+    "w": 5312664,
+    "h": 672084,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4224528,
+    "top": 2401062,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "위험 점수 부스터에는 에이전트 활동이 그날 평균 활동을 상회하는 조건이 표시됩니다.\n트리거 임계값·지표 임계값과 구분해 검토합니다. 탐지 옵션 화면을 촬영했으며 기존 정책의 설정은 변경하지 않았습니다."
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4854305,
+    "top": 5559552,
+    "w": 319842,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4574877,
+    "top": 5540829,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 61,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 최종 생성"
+   },
+   {
+    "name": "ch5-final-review-create.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4858512,
+    "top": 5585460,
+    "w": 320040,
+    "h": 176022,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 62,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-2. 에이전트 정책 생성 — 완료"
+   },
+   {
+    "name": "ch5-policy-created.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4458462,
+    "top": 5585460,
+    "w": 320040,
+    "h": 176022,
+    "kind": "other"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "정책 생성 후 실제 경고 표시까지 최대 24시간이 걸릴 수 있습니다. "
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 63,
+  "shapes": [
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-3. 에이전트 경고 — 실제 결과와 조사 한계"
+   },
+   {
+    "name": "ch5-agent-alerts.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3786378,
+    "top": 2395728,
+    "w": 2512314,
+    "h": 170688,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3525774,
+    "top": 2395728,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8064246,
+    "top": 1974342,
+    "w": 266700,
+    "h": 106680,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7803642,
+    "top": 1974342,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5930646,
+    "top": 3259836,
+    "w": 1994916,
+    "h": 277368,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5670042,
+    "top": 3259836,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "에이전트 > 경고에서 1 시간·상태·심각도 필터, 2 항목 0개, 3 사용 가능한 경고가 없다는 결과를 확인합니다.\n경보 상세·활동 탐색기·파일/도구 증거는 열 수 없었습니다. 가상의 경보나 탐지 성공 화면을 대신 만들지 않습니다."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 64,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1557909,
+    "top": 1159719,
+    "w": 9076184,
+    "h": 4957845,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 5 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "5-3. 에이전트 경고 확인"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1563631,
+    "top": 4447713,
+    "w": 442721,
+    "h": 413714,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1306182,
+    "top": 4520051,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1713624,
+    "top": 3588798,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2006351,
+    "top": 3612308,
+    "w": 1457751,
+    "h": 205090,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3506505,
+    "top": 3808348,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2006351,
+    "top": 3808348,
+    "w": 1457751,
+    "h": 205090,
+    "kind": "other"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3907652,
+    "top": 3326454,
+    "w": 6150748,
+    "h": 490943,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 65,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "6. 에이전트 런타임 보호"
+   },
+   {
+    "name": "표 8",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 10896844,
+    "h": 3577859,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택\nPower Platform 관리 센터 > 사용자 관리 > 관리자 지정",
+      "애플리케이션 관리자, 보안 관리자 추가\nPower Platform 관리자 추가"
+     ],
+     [
+      "1",
+      "M365 커넥터 설정",
+      "Defender > 설정 > AI 보안 > 시작 > Microsoft 365 커넥터",
+      "Agent 365·Microsoft 365 연결 확인\nEntra 관리 이벤트·M365 활동 수집"
+     ],
+     [
+      "2",
+      "Copilot Studio 보안 설정",
+      "Defender > 설정 > AI 보안 > 시작 > Copilot Studio",
+      ""
+     ],
+     [
+      "3",
+      "인증용 앱 구성",
+      "Entra > 앱 등록 > 인증서 & 비밀 > 페더레이션된 자격 증명",
+      "연결용 App ID·공식 인코딩 형식 구성"
+     ],
+     [
+      "4",
+      "PowerPlatform 보안 설정",
+      "Power Platform > 보안 > 위협 탐지 >추가 위협 탐지 > 환경 > 설정",
+      "App ID·Endpoint·데이터 공유 설정\n오류 시 Allow / Block 선택 후 저장"
+     ],
+     [
+      "5",
+      "런타임 보호 정책 설정",
+      "Defender > 설정 > AI 보안 > 정책 및 규칙 ",
+      "Default는 Audit, 사용자 지정은 Block\n단, 현재까지 Copilot Studio 에이전트의 차단 기록은 로그로 조회되지 않음"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 66,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-1. M365 커넥터 설정 — 진입"
+   },
+   {
+    "name": "그룹 16",
+    "type": "GROUP (6)",
+    "left": 381740,
+    "top": 1003175,
+    "w": 7883371,
+    "h": 3992733,
+    "kind": "group"
+   },
+   {
+    "name": "그림 13",
+    "type": "PICTURE (13)",
+    "left": 1704511,
+    "top": 1435107,
+    "w": 8534399,
+    "h": 4652756,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2265528,
+    "top": 4941244,
+    "w": 1542991,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2004925,
+    "top": 4941244,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2397015,
+    "top": 5858583,
+    "w": 505983,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2127532,
+    "top": 5849706,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4264832,
+    "top": 3713929,
+    "w": 1216152,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4004228,
+    "top": 3731685,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "그림 15",
+    "type": "PICTURE (13)",
+    "left": 4449536,
+    "top": 2294635,
+    "w": 7577802,
+    "h": 4106165,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7238850,
+    "top": 5572956,
+    "w": 4053545,
+    "h": 678899,
+    "kind": "other"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7117038,
+    "top": 4347718,
+    "w": 650924,
+    "h": 242038,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6870365,
+    "top": 4374452,
+    "w": 211162,
+    "h": 196172,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6964215,
+    "top": 5572956,
+    "w": 211162,
+    "h": 196172,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 67,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 852212,
+    "top": 1134170,
+    "w": 9996301,
+    "h": 5424451,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-1. M365 커넥터 설정 — 구성 요소 선택"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4325147,
+    "top": 3849291,
+    "w": 2839133,
+    "h": 1663742,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4064544,
+    "top": 3849291,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4334027,
+    "top": 6172199,
+    "w": 1294416,
+    "h": 299621,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4064544,
+    "top": 6163323,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 68,
+  "shapes": [
+   {
+    "name": "그림 14",
+    "type": "PICTURE (13)",
+    "left": 961438,
+    "top": 1104584,
+    "w": 9334009,
+    "h": 5067615,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-1. M365 커넥터 설정 — 완료"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4782304,
+    "top": 5805997,
+    "w": 508787,
+    "h": 248574,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 69,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-2. Copilot Studio 연결 — 진입"
+   },
+   {
+    "name": "그림 15",
+    "type": "PICTURE (13)",
+    "left": 585216,
+    "top": 1091954,
+    "w": 7491833,
+    "h": 4074850,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3357481,
+    "top": 4266542,
+    "w": 3638123,
+    "h": 625054,
+    "kind": "other"
+   },
+   {
+    "name": "그림 17",
+    "type": "PICTURE (13)",
+    "left": 4714664,
+    "top": 2654848,
+    "w": 6889072,
+    "h": 3745952,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8630817,
+    "top": 3503062,
+    "w": 1099109,
+    "h": 207804,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8352787,
+    "top": 3482266,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8715189,
+    "top": 4794778,
+    "w": 2590986,
+    "h": 207804,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 8495914,
+    "top": 4785764,
+    "w": 201519,
+    "h": 193635,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "TextBox 32",
+    "type": "TEXT_BOX (17)",
+    "left": 10002933,
+    "top": 5043693,
+    "w": 1303242,
+    "h": 246221,
+    "kind": "text",
+    "text": "값 복사해두기"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 70,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-3. 인증 용 앱 구성 — 스크립트 실행"
+   },
+   {
+    "name": "그룹 37",
+    "type": "GROUP (6)",
+    "left": 585216,
+    "top": 3200400,
+    "w": 5273108,
+    "h": 3153452,
+    "kind": "group"
+   },
+   {
+    "name": "그림 21",
+    "type": "PICTURE (13)",
+    "left": 585216,
+    "top": 2979414,
+    "w": 6310156,
+    "h": 3603038,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2146086,
+    "top": 5589248,
+    "w": 1973153,
+    "h": 259840,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1885482,
+    "top": 5620489,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "그림 27",
+    "type": "PICTURE (13)",
+    "left": 591516,
+    "top": 1008912,
+    "w": 7485432,
+    "h": 1847138,
+    "kind": "picture"
+   },
+   {
+    "name": "그림 31",
+    "type": "PICTURE (13)",
+    "left": 5930283,
+    "top": 3194432,
+    "w": 6072948,
+    "h": 3173002,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 9437424,
+    "top": 5025843,
+    "w": 2346133,
+    "h": 193635,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 9218149,
+    "top": 5016829,
+    "w": 201519,
+    "h": 193635,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 621175,
+    "top": 2060478,
+    "w": 201519,
+    "h": 193635,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 631663,
+    "top": 1822025,
+    "w": 191031,
+    "h": 200075,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 8290809,
+    "top": 1274113,
+    "w": 3413265,
+    "h": 658368,
+    "kind": "text",
+    "text": "관리자 권한으로 Windows PowerShell을 열고, 스크립트가 포함된 디렉터리에서 좌측의 스크립트를 실행합니다.\n\n각각 아래의 1, 2를 복사하여 매개변수로 넣고, DisplayName과 FICName은 사용자 고유 값으로 설정합니다."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 71,
+  "shapes": [
+   {
+    "name": "그림 25",
+    "type": "PICTURE (13)",
+    "left": 972608,
+    "top": 914400,
+    "w": 9677010,
+    "h": 5483216,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-3. 인증 용 앱 구성 — 생성된 앱 ID 확인"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3391662,
+    "top": 1475232,
+    "w": 4287522,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3131058,
+    "top": 1490472,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5226557,
+    "top": 3200400,
+    "w": 1955293,
+    "h": 361950,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4965954,
+    "top": 3200400,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 976036,
+    "top": 4232536,
+    "w": 1894418,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 715433,
+    "top": 4232536,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "TextBox 27",
+    "type": "TEXT_BOX (17)",
+    "left": 6021483,
+    "top": 2891960,
+    "w": 1303242,
+    "h": 246221,
+    "kind": "text",
+    "text": "값 복사해두기"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 72,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-4. PowerPlatform 보안 설정 — Copilot Studio 위협 탐지 설정"
+   },
+   {
+    "name": "ch6-threat-entry.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2255520,
+    "top": 2337054,
+    "w": 1093470,
+    "h": 218694,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1525524,
+    "top": 2148056,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3546348,
+    "top": 1867662,
+    "w": 6315456,
+    "h": 501396,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3285744,
+    "top": 1867662,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1828800,
+    "top": 2160662,
+    "w": 346229,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2026920,
+    "top": 2567940,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 73,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-4. PowerPlatform 보안 설정 — PowerPlatform 환경 선택"
+   },
+   {
+    "name": "ch6-environment-selection.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5482590,
+    "top": 2182368,
+    "w": 4693920,
+    "h": 224028,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5221986,
+    "top": 2182368,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5477256,
+    "top": 5489448,
+    "w": 517398,
+    "h": 176022,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5216652,
+    "top": 5489448,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 676656,
+    "top": 5943600,
+    "w": 10853928,
+    "h": 658368,
+    "kind": "text",
+    "text": "1 Agent-Demo(대한민국, 개발자)를 선택하고 2 설정을 엽니다. Agent-Demo-2나 기본 환경을 선택하지 않습니다.\n환경별 보호 연결은 별도입니다. 이번 화면은 기존 실습 환경 조회이며 다른 환경의 보호 설정은 변경하지 않았습니다."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 74,
+  "shapes": [
+   {
+    "name": "그림 13",
+    "type": "PICTURE (13)",
+    "left": 1471041,
+    "top": 1174626,
+    "w": 8179398,
+    "h": 4661147,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-4. PowerPlatform 보안 설정 — 연결"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4239006,
+    "top": 5480307,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "5"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4518660,
+    "top": 2036067,
+    "w": 2352294,
+    "h": 228600,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4258056,
+    "top": 2083311,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4496181,
+    "top": 3781809,
+    "w": 2384298,
+    "h": 181356,
+    "kind": "other"
+   },
+   {
+    "name": "Step 3",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4235577,
+    "top": 3781809,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 4",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4496181,
+    "top": 4197861,
+    "w": 2384298,
+    "h": 186690,
+    "kind": "other"
+   },
+   {
+    "name": "Step 4",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4235577,
+    "top": 4197861,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 4",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4464177,
+    "top": 5501261,
+    "w": 565023,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Additional explanation",
+    "type": "TEXT_BOX (17)",
+    "left": 7067931,
+    "top": 3896109,
+    "w": 2942844,
+    "h": 658368,
+    "kind": "text",
+    "text": "6-3 에서 복사한 인증용 앱 ID\n6-2 에서 복사한 엔드포인트 링크"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4464177,
+    "top": 4919095,
+    "w": 1403223,
+    "h": 434346,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4203573,
+    "top": 5007294,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "4"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 75,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-1 ~ 6-4. 설정 완료"
+   },
+   {
+    "name": "그림 3",
+    "type": "PICTURE (13)",
+    "left": 1149413,
+    "top": 840040,
+    "w": 9690037,
+    "h": 5560760,
+    "kind": "picture"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 76,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성"
+   },
+   {
+    "name": "ch6-default-rule.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2535936,
+    "top": 2395728,
+    "w": 1350264,
+    "h": 218694,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2260092,
+    "top": 2417445,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4309110,
+    "top": 2449068,
+    "w": 624078,
+    "h": 165354,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4048506,
+    "top": 2449068,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 77,
+  "shapes": [
+   {
+    "name": "그림 9",
+    "type": "PICTURE (13)",
+    "left": 1435036,
+    "top": 1263583,
+    "w": 8886825,
+    "h": 4802535,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6197346,
+    "top": 2968752,
+    "w": 720090,
+    "h": 202692,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5936742,
+    "top": 2940558,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6186678,
+    "top": 3422904,
+    "w": 2266950,
+    "h": 202692,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5926074,
+    "top": 3384804,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 78,
+  "shapes": [
+   {
+    "name": "그림 9",
+    "type": "PICTURE (13)",
+    "left": 1619250,
+    "top": 914400,
+    "w": 9677400,
+    "h": 5250190,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6805041,
+    "top": 2137028,
+    "w": 662559,
+    "h": 293369,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6497955,
+    "top": 2137028,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6805041,
+    "top": 2502400,
+    "w": 2062734,
+    "h": 2221999,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6496050,
+    "top": 2502400,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7319392,
+    "top": 5806440,
+    "w": 500634,
+    "h": 293369,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 7012305,
+    "top": 5806440,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 79,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1827276,
+    "top": 1150122,
+    "w": 8534400,
+    "h": 4667367,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6862191,
+    "top": 5507735,
+    "w": 538734,
+    "h": 216789,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 80,
+  "shapes": [
+   {
+    "name": "Chapter 6 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "6-5. 런타임 보호 정책 설정 — 프롬프트 증거 수집"
+   },
+   {
+    "name": "ch6-evidence-settings.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4325112,
+    "top": 2054352,
+    "w": 512064,
+    "h": 165354,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 81,
+  "shapes": [
+   {
+    "name": "제목 1",
+    "type": "PLACEHOLDER (14)",
+    "left": 584200,
+    "top": 457200,
+    "w": 6949114,
+    "h": 372410,
+    "kind": "text",
+    "text": "7. 에이전트 트래픽 모니터링"
+   },
+   {
+    "name": "표 8",
+    "type": "TABLE (19)",
+    "left": 584200,
+    "top": 1267122,
+    "w": 10896844,
+    "h": 1914681,
+    "kind": "table",
+    "table": [
+     [
+      "#",
+      "항목",
+      "설정 위치",
+      "확인 포인트"
+     ],
+     [
+      "0",
+      "역할/권한 준비",
+      "Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택",
+      "전역 보안 액세스 관리자 추가"
+     ],
+     [
+      "1",
+      "Power Platform 설정",
+      "Power Platform > 보안 > ID 및 액세스 > 에이전트에 대한 전역 보안 액세스",
+      "실습 환경 선택 → Enable On → Save\n환경 단위 적용; 다른 에이전트 영향 확인"
+     ],
+     [
+      "2",
+      "로그 조회",
+      "Entra > 전역 보안 액세스 > 모니터링 > Gen AI 인사이트 로그",
+      "Event ID·Transaction ID로 상관 분석"
+     ]
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 82,
+  "shapes": [
+   {
+    "name": "Chapter 7 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "7-1. Power Platform 설정"
+   },
+   {
+    "name": "ch7-gsa-entry.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 2255520,
+    "top": 2161032,
+    "w": 1093470,
+    "h": 192024,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1544148,
+    "top": 2161032,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3535680,
+    "top": 4582668,
+    "w": 6272784,
+    "h": 352044,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3275076,
+    "top": 4582668,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "3"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1828800,
+    "top": 2124456,
+    "w": 352338,
+    "h": 326898,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 3234690,
+    "top": 1871808,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 83,
+  "shapes": [
+   {
+    "name": "Chapter 7 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "7-1. Power Platform 설정 — 환경 선택"
+   },
+   {
+    "name": "ch7-environment-selection.png",
+    "type": "PICTURE (13)",
+    "left": 1828800,
+    "top": 987552,
+    "w": 8534400,
+    "h": 4800600,
+    "kind": "picture"
+   },
+   {
+    "name": "Target 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5482590,
+    "top": 2059686,
+    "w": 4693920,
+    "h": 240030,
+    "kind": "other"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5221986,
+    "top": 2059686,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5477256,
+    "top": 5489448,
+    "w": 517398,
+    "h": 176022,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5216652,
+    "top": 5489448,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 84,
+  "shapes": [
+   {
+    "name": "그림 11",
+    "type": "PICTURE (13)",
+    "left": 1748901,
+    "top": 1188358,
+    "w": 8895425,
+    "h": 4811069,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 7 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "7-1. Power Platform 설정 — 전역 보안 액세스 사용 설정"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4783510,
+    "top": 5669642,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5012110,
+    "top": 2349426,
+    "w": 1752673,
+    "h": 228599,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 4760961,
+    "top": 2349425,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 5012110,
+    "top": 5656497,
+    "w": 651844,
+    "h": 241745,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 85,
+  "shapes": [
+   {
+    "name": "그림 9",
+    "type": "PICTURE (13)",
+    "left": 1441637,
+    "top": 914400,
+    "w": 9445677,
+    "h": 5370990,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 7 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "7-2. 로그 조회 — GSA 활성화"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1163752,
+    "top": 3739406,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1441637,
+    "top": 3712772,
+    "w": 1869734,
+    "h": 317687,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6409946,
+    "top": 3256995,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 6663188,
+    "top": 3208012,
+    "w": 1513146,
+    "h": 316424,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "slide": 86,
+  "shapes": [
+   {
+    "name": "그림 15",
+    "type": "PICTURE (13)",
+    "left": 1077650,
+    "top": 952953,
+    "w": 10190788,
+    "h": 5517419,
+    "kind": "picture"
+   },
+   {
+    "name": "Chapter 7 title",
+    "type": "TEXT_BOX (17)",
+    "left": 585216,
+    "top": 457200,
+    "w": 11018520,
+    "h": 457200,
+    "kind": "text",
+    "text": "7-2. 로그 조회 — Gen AI 인사이트 로그"
+   },
+   {
+    "name": "Step 1",
+    "type": "AUTO_SHAPE (1)",
+    "left": 799765,
+    "top": 2665207,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "1"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1077650,
+    "top": 2638573,
+    "w": 1869734,
+    "h": 317687,
+    "kind": "other"
+   },
+   {
+    "name": "Step 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 950176,
+    "top": 5192326,
+    "w": 228600,
+    "h": 228600,
+    "kind": "text",
+    "text": "2"
+   },
+   {
+    "name": "Target 2",
+    "type": "AUTO_SHAPE (1)",
+    "left": 1203418,
+    "top": 5143343,
+    "w": 1513146,
+    "h": 316424,
+    "kind": "other"
+   }
+  ],
+  "notes": ""
+ }
+]

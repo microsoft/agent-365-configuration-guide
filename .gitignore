@@ -1,0 +1,7 @@
+slides/
+__pycache__/
+*.pyc
+_site/
+_*.png
+_*.pptx
+_*.json

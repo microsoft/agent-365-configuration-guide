@@ -1,0 +1,446 @@
+===== SLIDE 1 =====
+  [T:Text Placeholder 3] Subtitle
+  [T:Text Placeholder 4] Agent 365 초기 설정 및 사용 가이드
+===== SLIDE 2 =====
+  [T:제목 1] 전체 목차0. 에이전트 생성1. 에이전트 승인 및 전사 배포2. 에이전트 인벤토리 확인3. 에이전트 차단4. 에이전트에 대한 조건부 접근제어5. 에이전트 리스크 탐지6. 에이전트 런타임 보호7. 에이전트 트래픽 모니터링
+===== SLIDE 3 =====
+  [T:제목 1] 0. 에이전트 생성
+  [TABLE]
+     | # | 항목 | 설정/확인 위치 | 
+     | 1 | 환경·권한 준비 | New Copilot Studio > 환경 선택기 | Power platform 환경·역할 확인
+     | 2 | 빈 에이전트 생성 | Agents > New agent > 이름·지침 입력 > Save / New experience 유지; Agent365-Guide-Demo로 생성 | 
+     | 3 | 지침·오케스트레이션 | Build > Instructions / Model / … > Settings > AI & behavior / 새 UI의 모델·행동 설정 확인; 기존 생성형 토글과 구분 | 
+     | 4 | 지식 추가 | … > Settings > Safety & access / Build > Add knowledge / 필요한 지식 추가 | 
+     | 5 | 도구 구성 | Build > Add tool > Model Context Protocol (MCP) 등 / 필요한 도구 연결 | 
+     | 6 | 테스트 | Preview / 도구 호출 확인 등 | 
+     | 7 | 게시·채널 연결 | 게시 > 채널 > Teams 및 Microsoft 365 Copilot / 에이전트 게시 및 채널 추가 | 
+     | 8 | 관리자 승인 제출 | 채널 > 가용성 옵션 > 내 조직의 모든 사람에게 표시 / 관리자 승인을 위해 제출 > 예 > 새로 고침으로 요청 상태 확인 | 
+  [NOTES] https://chichoi1991.github.io/Agent_Blog/chapters/newcs3-handson/
+===== SLIDE 4 =====
+  [T:제목 1] 0-1. 환경·권한 준비 — 실습 환경 선택
+  [PIC:ch0-environment.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 5 =====
+  [T:제목 1] 0-2. 빈 에이전트 생성 — New agent
+  [PIC:ch0-new-agent.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 6 =====
+  [T:제목 1] 0-3. 에이전트 이름·지침·모델 설정
+  [PIC:ch0-settings-menu.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+===== SLIDE 7 =====
+  [T:제목 1] 0-4. 지식 추가
+  [PIC:ch0-knowledge-picker.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 8 =====
+  [T:제목 1] 0-5. 도구 구성 
+  [PIC:ch0-native-mcp-catalog.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 9 =====
+  [T:제목 1] 0-6. 테스트
+  [PIC:ch0-workiq-result.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 10 =====
+  [T:Chapter 1 title] 0-7. 에이전트 게시 — 채널 추가 시작
+  [PIC:ch1-publish-dialog.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 11 =====
+  [T:Chapter 1 title] 0-7. 에이전트 게시 — Teams + Microsoft 365
+  [PIC:ch1-channel-picker.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 12 =====
+  [T:Chapter 1 title] 0-7. 에이전트 게시 — 사용 채널 선택
+  [PIC:ch1-channel-availability.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 13 =====
+  [T:Chapter 1 title] 0-7. 에이전트 게시 — 게시 완료
+  [PIC:ch1-published.png] pos=1828800,987552 size=8534400x4800600
+  [T:Additional explanation] Teams + Microsoft 365 채널 게시가 완료된 상태이며, 아직 조직 카탈로그 승인·전사 배포 완료를 뜻하지 않습니다.
+===== SLIDE 14 =====
+  [T:Chapter 1 title] 0-8. 관리자 승인 제출 
+  [PIC:ch1-submit-entry.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 15 =====
+  [T:Chapter 1 title] 0-8. 관리자 승인 제출 — 제출 전 검토
+  [PIC:ch1-submit-review.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 16 =====
+  [T:Chapter 1 title] 0-8. 관리자 승인 제출 — 조직 공개 확인
+  [PIC:ch1-submit-confirm.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 17 =====
+  [T:Chapter 1 title] 0-8. 관리자 승인 제출 — 승인 대기
+  [PIC:ch1-submitted.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 18 =====
+  [T:제목 1] 1. 에이전트 승인 및 전사 배포
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택 | AI 관리자 추가
+     | 1 | 관리자 승인  | AI 관리자: Microsoft 365 관리 센터 > 에이전트 > 모든 에이전트 > 요청 | 제작자·업무 목적·지식·도구·요청 권한 검토; 필요 시 제출 거부
+     | 2 | 전사 배포  | 요청 상세 > 저장소에 게시 > 대상 지정 > 권한 검토 > 게시 | 설치 가능·사전 설치 대상 구분, 요청 권한에 맞는 관리자 동의 수행
+     | 4 | 사용자 실행·갱신 | Teams / Microsoft 365 Copilot / 에이전트 > 설정 > 사용자 액세스 | 일반 사용자 실행 확인, 내용 수정 후 재게시·상세 정보 변경 시 재승인 확인
+===== SLIDE 19 =====
+  [T:Chapter 1 title] 1-1. 관리자 승인 — 요청 목록
+  [PIC:ch1-admin-request.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Additional explanation] Microsoft 365 관리 센터 > 에이전트 > 모든 에이전트 > 요청으로 이동합니다
+===== SLIDE 20 =====
+  [T:Chapter 1 title] 1-1. 관리자 승인 — 게시 마법사 시작
+  [PIC:ch1-admin-review.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Additional explanation] 요청 상세에서 화면에 표시된 Microsoft Store에 게시 버튼을 선택합니다.
+===== SLIDE 21 =====
+  [T:Chapter 1 title] 1-2. 전사 배포 — 게시·미리 설치 대상
+  [PIC:ch1-admin-audience.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+===== SLIDE 22 =====
+  [T:Chapter 1 title] 1-2. 전사 배포 — 정책 템플릿 확인
+  [PIC:ch1-admin-template.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 23 =====
+  [T:Chapter 1 title] 1-2. 전사 배포 — 권한 검토
+  [PIC:ch1-admin-permissions.png] pos=1828800,987552 size=8534400x4800600
+  [T:Additional explanation] 1 이 게시 마법사에서는 필요한 권한 없음으로 표시됐습니다. 내용을 확인한 뒤 다음으로 이동합니다. | 이는 에이전트의 모든 MCP 도구가 무권한으로 실행된다는 뜻이 아닙니다. 도구별 인증·동의는 별도로 적용됩니다.
+===== SLIDE 24 =====
+  [T:Chapter 1 title] 1-2. 전사 배포 — 최종 검토
+  [PIC:ch1-admin-final-review.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 25 =====
+  [T:Chapter 1 title] 1-2 전사 배포 — 관리자 처리 완료
+  [PIC:ch1-admin-deployed.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 26 =====
+  [T:제목 1] 2. 에이전트 인벤토리 확인
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택 | AI 읽기 권한자 추가
+     | 1 | Registry 조회 | Microsoft 365 관리 센터 / 에이전트 > 모든 에이전트 > 레지스트리 | Platform = Copilot Studio로 필터링 / 이름·상태·채널 조회; 등록 ≠ 실제 사용
+     | 2 | 구성 확인 | 에이전트 상세 > 세부 정보 / 사용자 / 데이터 & 도구 / 권한 등 확인 | 소유자·지식·도구·권한·설치 대상 확인 / Data & tools 변경은 Copilot Studio에서
+     | 3 | 실제 사용 확인 | 에이전트 상세 > 세부 정보 > 활성 / Copilot Studio > 모니터 / 조회 기간 / 활성 사용자 보기 | 게시 채널의 세션·활성 사용자 확인 / 테스트 패널 활동 제외, 기본 시간은 UTC 기준
+===== SLIDE 27 =====
+  [T:Chapter 2 title] 2-1. 인벤토리 조회 — 레지스트리 진입
+  [PIC:ch2-registry-entry.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 28 =====
+  [T:Chapter 2 title] 2-2. 구성 확인 — 채널·담당자·Entra ID
+  [PIC:ch2-details.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 29 =====
+  [T:Chapter 2 title] 2-3. 실제 사용 확인 — M365 관리 센터
+  [PIC:ch2-registry-activity.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 30 =====
+  [T:Chapter 2 title] 2-3. 실제 사용 확인 — Copilot Studio
+  [PIC:ch2-monitor-overview.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 31 =====
+  [T:제목 1] 3. 에이전트 차단
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택 | AI 관리자, 에이전트 ID 관리차 추가
+     | 1 | 에이전트 차단 실행 | 에이전트 상세 > 차단 / 에이전트 차단 > 저장 | 저장 후 차단 상태 확인 / 삭제·ID 인증 중지와 구분
+     | 2 | 차단 결과 확인 | 일반 사용자 Teams / Microsoft 365 Copilot | 기존 진입점·새 설치·새 대화 확인 / 채널별 실제 사용 불가 상태 기록
+     | 3 | 차단 해제·복구 | 에이전트 상세 > 차단 해제 / 에이전트 차단 해제 > 저장  | 설치·가용성 범위와 정상 실행 재확인
+===== SLIDE 32 =====
+  [T:Chapter 3 title] 3-1. 에이전트 차단 실행 | 
+  [PIC:ch3-before-block.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 33 =====
+  [PIC:ch3-block-confirm.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Chapter 3 title] 3-1. 에이전트 차단 실행 | 
+===== SLIDE 34 =====
+  [T:Chapter 3 title] 3-2. 차단 결과 확인
+  [PIC:ch3-blocked.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 35 =====
+  [T:Chapter 3 title] 3-2. 차단 결과 확인
+  [PIC:그림 6] pos=594686,1210200 size=10999580x4437599
+===== SLIDE 36 =====
+  [T:Chapter 3 title] 3-3. 차단 해제
+  [PIC:ch3-blocked.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 37 =====
+  [T:Chapter 3 title] 3-3. 차단 해제
+  [PIC:ch3-restore-confirm.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 38 =====
+  [T:제목 1] 4. 에이전트에 대한 조건부 접근제어
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택 | 조건부 액세스 관리자 추가
+     | 1 | 대상 정책 생성 | 조건부 액세스 > 정책 > 새 정책 / 에이전트 / 대상 리소스 / 권한 부여 | Agent ID·실제 커넥터 리소스 지정
+     | 2 | 정책 평가 확인 | Teams에서 에이전트 및 커넥터 실행 / Entra > 모니터링 및 상태 > 로그인 로그 | Agent ID·리소스·시각·CA 결과 대조 / (Report-only는 실제 차단하지 않음)
+===== SLIDE 39 =====
+  [T:Chapter 4 title] 4-1. 대상 정책 생성
+  [PIC:그림 13] pos=1906448,1448148 size=7690133x4368103
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 40 =====
+  [PIC:그림 11] pos=1240517,914400 size=9902990x5645225
+  [T:Chapter 4 title] 4-1. 대상 정책 생성 — 할당
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+  [T:Step 4] 4
+===== SLIDE 41 =====
+  [T:Chapter 4 title] 4-1. 대상 정책 생성 — 대상 리소스
+  [PIC:그림 7] pos=1371070,1174149 size=9363753x5310908
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 42 =====
+  [PIC:그림 29] pos=1025236,914400 size=9896618x5547778
+  [T:Chapter 4 title] 4-1. 대상 정책 생성 — 조건
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+  [T:Step 4] 4
+  [T:Step 4] 5
+===== SLIDE 43 =====
+  [T:Chapter 4 title] 4-1. 대상 정책 생성 — 액세스 제어
+  [PIC:그림 11] pos=1161588,1035718 size=9691140x5480536
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+===== SLIDE 44 =====
+  [PIC:그림 11] pos=1247176,1089437 size=9356170x5311363
+  [T:Chapter 4 title] 4-1. 대상 정책 생성 — 최종 생성
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 45 =====
+  [PIC:그림 7] pos=969093,1103879 size=9513889x5370944
+  [T:Chapter 4 title] 4-2. 정책 평가 확인 — 대상 에이전트 확인
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 46 =====
+  [PIC:그림 14] pos=1270000,956969 size=9652000x5501639
+  [T:Chapter 4 title] 4-2. 정책 평가 확인 — 로그인 로그
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+===== SLIDE 47 =====
+  [PIC:그림 16] pos=1431875,1108555 size=9325202x5292245
+  [T:Chapter 4 title] 4-2. 정책 평가 확인 — 로그인 로그
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 48 =====
+  [T:제목 1] 5. 에이전트 리스크 탐지
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Purview 포털 > 설정 > 역할 및 범위 > 역할 그룹 | 내부자 위험 관리 분석가 추가 / 또는 내부자 위험 관리 조사자 역할 추가
+     | 1 | 감사 준비 | 감사 > 감사 수집 상태 | 감사 수집 활성 상태 확인
+     | 2 | 에이전트 정책 생성 | 내부 위험 관리 > 정책 > 에이전트 정책 / 커스텀 에이전트 정책 생성 | 
+     | 3 | 에이전트 경고 확인 | 내부 위험 관리 > 에이전트 > 경고 | 대상 에이전트·심각도·활동 순서 확인
+===== SLIDE 49 =====
+  [T:Chapter 5 title] 5-1. 감사 준비 — 활성화 상태 확인
+  [PIC:ch5-audit-search.png] pos=1149532,928116 size=9729216x5472684
+  [T:Additional explanation] 감사 로그가 꺼져 있으면 IRM 정책이 설정돼 있어도 분석할 활동 이벤트 자체가 없어서 지표·경고가 생성되지 않음
+===== SLIDE 50 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성
+  [PIC:ch5-agent-policies.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 3
+  [T:Step 3] 4
+  [T:Step 2] 2
+===== SLIDE 51 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 정책 템플릿
+  [PIC:ch5-risk-template.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 52 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 정책 이름
+  [PIC:ch5-policy-name.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 1] 2
+  [T:Step 1] 3
+===== SLIDE 53 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 정책 적용 에이전트 선택
+  [PIC:ch5-agent-scope.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Additional explanation] 현재 UI는 1 모든 에이전트가 선택돼 있고 2 특정 에이전트는 비활성화되어 있습니다. | 사용자의 실제 생성 요청에 따라 모든 에이전트 범위로 제출했습니다. 정책 이름에 Demo가 있어도 단일 에이전트 범위는 아닙니다.
+  [T:Step 1] 2
+===== SLIDE 54 =====
+  [PIC:그림 15] pos=1915774,987552 size=8447426x4562199
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 콘텐츠 우선순위 설정
+  [T:Step 1] 1
+  [T:Step 1] 2
+===== SLIDE 55 =====
+  [PIC:그림 11] pos=1931206,987552 size=8431994x4587240
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 콘텐츠 우선순위 설정
+  [T:Step 1] 2
+  [T:Step 2] 3
+  [T:Additional explanation] 앞서 선택한 콘텐츠들에 대해 각각 우선순위 세부 컨텐츠 추가 설정
+  [T:Step 1] 1
+  [T:Step 1] 4
+===== SLIDE 56 =====
+  [PIC:그림 11] pos=1828800,987553 size=8894435x4800600
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 알림 생성 범위 설정
+  [T:Step 1] 1
+  [T:Step 1] 2
+===== SLIDE 57 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 이벤트 트리거
+  [PIC:ch5-trigger-events.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 1] 2
+===== SLIDE 58 =====
+  [PIC:그림 11] pos=482477,1806347 size=5483687x3004296
+  [PIC:그림 13] pos=6225837,1806347 size=5540233x3004296
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 트리거 임계값
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+  [T:Additional explanation] 초반에는 알림 확인을 위해 임계값을 최대한 낮게 지정하고, 점차 올려가며 사내 환경에 맞게 적용
+===== SLIDE 59 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 검토
+  [PIC:ch5-indicators.png] pos=1828800,987552 size=8534400x4800600
+  [T:Additional explanation] 표시기 단계에서 선택한 총 표시기 4/4와 에이전트 지표 분류를 확인합니다. | 현재 화면은 범주를 펼친 상태입니다. 선택된 표시기에 대한 실제 이벤트 수집·탐지 여부는 경고 및 활동 증거로 별도 확인합니다.
+===== SLIDE 60 =====
+  [T:Chapter 5 title] 5-4. 탐지 옵션 — 위험 점수 부스터
+  [PIC:ch5-detection-options.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Additional explanation] 위험 점수 부스터에는 에이전트 활동이 그날 평균 활동을 상회하는 조건이 표시됩니다. | 트리거 임계값·지표 임계값과 구분해 검토합니다. 탐지 옵션 화면을 촬영했으며 기존 정책의 설정은 변경하지 않았습니다.
+  [T:Step 3] 3
+===== SLIDE 61 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 최종 생성
+  [PIC:ch5-final-review-create.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 62 =====
+  [T:Chapter 5 title] 5-2. 에이전트 정책 생성 — 완료
+  [PIC:ch5-policy-created.png] pos=1828800,987552 size=8534400x4800600
+  [T:Additional explanation] 정책 생성 후 실제 경고 표시까지 최대 24시간이 걸릴 수 있습니다. 
+===== SLIDE 63 =====
+  [T:Chapter 5 title] 5-3. 에이전트 경고 — 실제 결과와 조사 한계
+  [PIC:ch5-agent-alerts.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+  [T:Additional explanation] 에이전트 > 경고에서 1 시간·상태·심각도 필터, 2 항목 0개, 3 사용 가능한 경고가 없다는 결과를 확인합니다. | 경보 상세·활동 탐색기·파일/도구 증거는 열 수 없었습니다. 가상의 경보나 탐지 성공 화면을 대신 만들지 않습니다.
+===== SLIDE 64 =====
+  [PIC:그림 11] pos=1557909,1159719 size=9076184x4957845
+  [T:Chapter 5 title] 5-3. 에이전트 경고 확인
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 2] 3
+===== SLIDE 65 =====
+  [T:제목 1] 6. 에이전트 런타임 보호
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택 / Power Platform 관리 센터 > 사용자 관리 > 관리자 지정 | 애플리케이션 관리자, 보안 관리자 추가 / Power Platform 관리자 추가
+     | 1 | M365 커넥터 설정 | Defender > 설정 > AI 보안 > 시작 > Microsoft 365 커넥터 | Agent 365·Microsoft 365 연결 확인 / Entra 관리 이벤트·M365 활동 수집
+     | 2 | Copilot Studio 보안 설정 | Defender > 설정 > AI 보안 > 시작 > Copilot Studio | 
+     | 3 | 인증용 앱 구성 | Entra > 앱 등록 > 인증서 & 비밀 > 페더레이션된 자격 증명 | 연결용 App ID·공식 인코딩 형식 구성
+     | 4 | PowerPlatform 보안 설정 | Power Platform > 보안 > 위협 탐지 >추가 위협 탐지 > 환경 > 설정 | App ID·Endpoint·데이터 공유 설정 / 오류 시 Allow / Block 선택 후 저장
+     | 5 | 런타임 보호 정책 설정 | Defender > 설정 > AI 보안 > 정책 및 규칙  | Default는 Audit, 사용자 지정은 Block / 단, 현재까지 Copilot Studio 에이전트의 차단 기록은 로그로 조회되지 않음
+===== SLIDE 66 =====
+  [T:Chapter 6 title] 6-1. M365 커넥터 설정 — 진입
+  [PIC:그림 13] pos=1704511,1435107 size=8534399x4652756
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 3] 3
+  [PIC:그림 15] pos=4449536,2294635 size=7577802x4106165
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 67 =====
+  [PIC:그림 11] pos=852212,1134170 size=9996301x5424451
+  [T:Chapter 6 title] 6-1. M365 커넥터 설정 — 구성 요소 선택
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 68 =====
+  [PIC:그림 14] pos=961438,1104584 size=9334009x5067615
+  [T:Chapter 6 title] 6-1. M365 커넥터 설정 — 완료
+===== SLIDE 69 =====
+  [T:Chapter 6 title] 6-2. Copilot Studio 연결 — 진입
+  [PIC:그림 15] pos=585216,1091954 size=7491833x4074850
+  [PIC:그림 17] pos=4714664,2654848 size=6889072x3745952
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:TextBox 32] 값 복사해두기
+===== SLIDE 70 =====
+  [T:Chapter 6 title] 6-3. 인증 용 앱 구성 — 스크립트 실행
+  [PIC:그림 21] pos=585216,2979414 size=6310156x3603038
+  [T:Step 1] 1
+  [PIC:그림 27] pos=591516,1008912 size=7485432x1847138
+  [PIC:그림 31] pos=5930283,3194432 size=6072948x3173002
+  [T:Step 2] 2
+  [T:Step 2] 2
+  [T:Step 1] 1
+  [T:Additional explanation] 관리자 권한으로 Windows PowerShell을 열고, 스크립트가 포함된 디렉터리에서 좌측의 스크립트를 실행합니다. |  | 각각 아래의 1, 2를 복사하여 매개변수로 넣고, DisplayName과 FICName은 사용자 고유 값으로 설정합니다.
+===== SLIDE 71 =====
+  [PIC:그림 25] pos=972608,914400 size=9677010x5483216
+  [T:Chapter 6 title] 6-3. 인증 용 앱 구성 — 생성된 앱 ID 확인
+  [T:Step 1] 2
+  [T:Step 2] 3
+  [T:Step 2] 1
+  [T:TextBox 27] 값 복사해두기
+===== SLIDE 72 =====
+  [T:Chapter 6 title] 6-4. PowerPlatform 보안 설정 — Copilot Studio 위협 탐지 설정
+  [PIC:ch6-threat-entry.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 3
+  [T:Step 2] 2
+===== SLIDE 73 =====
+  [T:Chapter 6 title] 6-4. PowerPlatform 보안 설정 — PowerPlatform 환경 선택
+  [PIC:ch6-environment-selection.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Additional explanation] 1 Agent-Demo(대한민국, 개발자)를 선택하고 2 설정을 엽니다. Agent-Demo-2나 기본 환경을 선택하지 않습니다. | 환경별 보호 연결은 별도입니다. 이번 화면은 기존 실습 환경 조회이며 다른 환경의 보호 설정은 변경하지 않았습니다.
+===== SLIDE 74 =====
+  [PIC:그림 13] pos=1471041,1174626 size=8179398x4661147
+  [T:Chapter 6 title] 6-4. PowerPlatform 보안 설정 — 연결
+  [T:Step 1] 5
+  [T:Step 2] 1
+  [T:Step 3] 2
+  [T:Step 4] 3
+  [T:Additional explanation] 6-3 에서 복사한 인증용 앱 ID | 6-2 에서 복사한 엔드포인트 링크
+  [T:Step 1] 4
+===== SLIDE 75 =====
+  [T:Chapter 6 title] 6-1 ~ 6-4. 설정 완료
+  [PIC:그림 3] pos=1149413,840040 size=9690037x5560760
+===== SLIDE 76 =====
+  [T:Chapter 6 title] 6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성
+  [PIC:ch6-default-rule.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 77 =====
+  [PIC:그림 9] pos=1435036,1263583 size=8886825x4802535
+  [T:Chapter 6 title] 6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 78 =====
+  [PIC:그림 9] pos=1619250,914400 size=9677400x5250190
+  [T:Chapter 6 title] 6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성
+  [T:Step 1] 1
+  [T:Step 2] 2
+  [T:Step 1] 3
+===== SLIDE 79 =====
+  [PIC:그림 11] pos=1827276,1150122 size=8534400x4667367
+  [T:Chapter 6 title] 6-5. 런타임 보호 정책 설정 — 실시간 보호 커스텀 정책 생성
+===== SLIDE 80 =====
+  [T:Chapter 6 title] 6-5. 런타임 보호 정책 설정 — 프롬프트 증거 수집
+  [PIC:ch6-evidence-settings.png] pos=1828800,987552 size=8534400x4800600
+===== SLIDE 81 =====
+  [T:제목 1] 7. 에이전트 트래픽 모니터링
+  [TABLE]
+     | # | 항목 | 설정 위치 | 확인 포인트
+     | 0 | 역할/권한 준비 | Entra 관리 센터 > 사용자 > 할당된 역할 > 할당 추가 > 역할 선택 | 전역 보안 액세스 관리자 추가
+     | 1 | Power Platform 설정 | Power Platform > 보안 > ID 및 액세스 > 에이전트에 대한 전역 보안 액세스 | 실습 환경 선택 → Enable On → Save / 환경 단위 적용; 다른 에이전트 영향 확인
+     | 2 | 로그 조회 | Entra > 전역 보안 액세스 > 모니터링 > Gen AI 인사이트 로그 | Event ID·Transaction ID로 상관 분석
+===== SLIDE 82 =====
+  [T:Chapter 7 title] 7-1. Power Platform 설정
+  [PIC:ch7-gsa-entry.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 3
+  [T:Step 1] 2
+===== SLIDE 83 =====
+  [T:Chapter 7 title] 7-1. Power Platform 설정 — 환경 선택
+  [PIC:ch7-environment-selection.png] pos=1828800,987552 size=8534400x4800600
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 84 =====
+  [PIC:그림 11] pos=1748901,1188358 size=8895425x4811069
+  [T:Chapter 7 title] 7-1. Power Platform 설정 — 전역 보안 액세스 사용 설정
+  [T:Step 1] 2
+  [T:Step 2] 1
+===== SLIDE 85 =====
+  [PIC:그림 9] pos=1441637,914400 size=9445677x5370990
+  [T:Chapter 7 title] 7-2. 로그 조회 — GSA 활성화
+  [T:Step 1] 1
+  [T:Step 2] 2
+===== SLIDE 86 =====
+  [PIC:그림 15] pos=1077650,952953 size=10190788x5517419
+  [T:Chapter 7 title] 7-2. 로그 조회 — Gen AI 인사이트 로그
+  [T:Step 1] 1
+  [T:Step 2] 2
