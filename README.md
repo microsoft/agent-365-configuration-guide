@@ -4,7 +4,7 @@
 
 *Copilot Studio(New experience)에서 만든 에이전트를 보호·거버넌스하기 위한 Agent 365 활용 방법을 스크린샷과 함께 안내하는 웹 가이드입니다.*
 
-**🌐 View the guide / 가이드 보기: [https://microsoft.github.io/agent-365-configuration-guide/](https://microsoft.github.io/agent-365-configuration-guide/)**
+**🌐 View the guide / 가이드 보기: [https://microsoft.github.io/agent-365-guide/](https://microsoft.github.io/agent-365-guide/)**
 
 ---
 
