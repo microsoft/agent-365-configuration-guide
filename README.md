@@ -1,8 +1,8 @@
-# Microsoft Agent 365 — Security Configuration Guide
+# Microsoft Agent 365 Guide for Agent Security
 
-*A visual, step-by-step guide to configuring security and governance for agents built with Microsoft Agent 365 and Copilot Studio.*
+*A visual, step-by-step guide to securing and governing agents built with Microsoft Agent 365 and Copilot Studio.*
 
-*Copilot Studio(New experience)에서 만든 에이전트의 보안 및 거버넌스 구성을 스크린샷과 함께 안내하는 웹 가이드입니다.*
+*Copilot Studio(New experience)에서 만든 에이전트를 보호·거버넌스하기 위한 Agent 365 활용 방법을 스크린샷과 함께 안내하는 웹 가이드입니다.*
 
 **🌐 View the guide / 가이드 보기: [https://microsoft.github.io/agent-365-configuration-guide/](https://microsoft.github.io/agent-365-configuration-guide/)**
 

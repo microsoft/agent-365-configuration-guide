@@ -21,8 +21,8 @@ CH = [
       lead="문제가 있는 에이전트를 즉시 사용 불가 상태로 만들고, 사용자 화면에서 실제로 차단됐는지 확인한 뒤 복구하는 단계입니다. 차단은 삭제나 Agent ID 인증 중지와는 구분되는 조치입니다."),
  dict(id="ch4", num="4", orig="4", name="에이전트에 대한 기본 접근제어", intro=38, range=(39,47), custom=True,
       lead="사용자가 <b>사외(신뢰할 수 없는 네트워크)</b>에서 <b>Copilot Studio 에이전트</b>를 사용하지 못하도록 Entra 조건부 액세스 정책을 만들고, 실제 차단과 로그인 로그의 평가 결과를 확인하는 단계입니다. 접근 제어 대상이 클라우드 리소스가 아니라 에이전트 자체가 됩니다."),
- dict(id="ch5", num="5", orig="5", name="에이전트 리스크 탐지", intro=48, range=(49,64),
-      lead="Purview 내부 위험 관리(IRM)에서 에이전트 정책을 만들어 위험 신호를 수집하고, 에이전트 경고를 확인하는 단계입니다. 감사 로그 수집이 켜져 있어야 지표·경고가 생성됩니다."),
+ dict(id="ch5", num="5", orig="5", name="에이전트 리스크 탐지", intro=48, range=(50,64),
+      lead="에이전트의 상호작용에서 발생하는 위험을 서로 다른 계층에서 탐지·수집하는 단계입니다. <b>Purview DLP</b>(민감 정보 유형이 포함된 프롬프트·메시지 차단), <b>Communication Compliance</b>(부적절·비윤리적 상호작용 및 기밀 공유 탐지), <b>내부 위험 관리(IRM)</b>(에이전트 활동 기반 위험 신호) 세 가지 정책을 만들고, 하나의 에이전트 활동에 대해 <b>DLP·CC·IRM 경고를 함께 확인</b>합니다. 감사 로그 수집이 켜져 있어야 지표·경고가 생성됩니다."),
  dict(id="ch6", num="6", orig="4", name="에이전트 리스크 기반 접근제어", intro=38, range=(39,47),
       lead="에이전트가 접근하는 클라우드 앱·커넥터 리소스를 대상으로 조건부 액세스 정책을 적용하고, 위치·네트워크 등 리스크 신호에 따라 허용/차단을 제어한 뒤 로그인 로그로 평가 결과를 검증하는 단계입니다. 앞의 기본 접근제어가 에이전트 자체를 대상으로 했다면, 여기서는 에이전트가 호출하는 리소스(클라우드 앱)를 대상으로 접근을 통제합니다."),
  dict(id="ch7", num="7", orig="6", name="에이전트 런타임 보호", intro=65, range=(66,80),
@@ -76,7 +76,7 @@ DESC = {
  39:"<code>Entra 관리 센터 &gt; 보호 &gt; 조건부 액세스 &gt; 정책</code>에서 ① 새 정책을 만들고 ② 이름을 지정합니다. 이 작업에는 <b>조건부 액세스 관리자</b> 역할이 필요합니다.",
  40:"할당 단계에서 정책 적용 대상을 지정합니다(①~④). 에이전트는 사람 사용자와 달리 <b>Agent ID</b>로 지정하며, 사용자 대상 정책과 섞이지 않도록 대상 범위를 명확히 분리합니다.",
  41:"① 대상 리소스에서 ② 에이전트가 실제로 호출하는 커넥터·리소스를 지정합니다. 에이전트만 지정하고 실제 접근 리소스를 빠뜨리면 <b>커넥터 호출이 정책 평가에서 누락</b>될 수 있습니다.",
- 42:"조건(네트워크·디바이스·위치 등)을 구성합니다(①~⑤). 에이전트는 사용자 디바이스가 없는 워크로드 형태로 동작하므로, 디바이스 기반 조건을 그대로 적용하면 의도치 않은 차단이 발생할 수 있습니다.",
+ 42:"조건(네트워크·디바이스·위치 등)을 구성합니다(①~⑤). 에이전트는 사용자 디바이스가 없는 워크로드 형태로 동작하므로, 디바이스 기반 조건을 그대로 적용하면 의도치 않은 차단이 발생할 수 있습니다.<br><br><b>Note — 리스크 신호 출처 구분</b><br>이 장에서 에이전트에 적용하는 위험 조건은 <b>Microsoft Entra ID Protection</b>이 산정한 <b>에이전트 위험(Agent risk, 미리 보기)</b>입니다. 이는 <b>5장의 Purview 내부 위험 관리(IRM) 에이전트 경고</b>나 Defender 경고와는 <b>다른 별도의 신호</b>로, IRM·Defender 경고가 그대로 조건부 액세스 조건으로 들어오지 않습니다. 에이전트 위험을 산정하는 <b>위험 기여 활동(탐지 종류)</b>은 공식 문서 <a href=\"https://learn.microsoft.com/ko-kr/entra/id-protection/concept-risky-agents#activities-contributing-to-risk\" target=\"_blank\" rel=\"noopener\">에이전트에 대한 ID 보호 — 위험에 기여하는 활동</a>을 참고하세요.",
  43:"액세스 제어에서 허용/차단과 요구 제어를 지정합니다(①~③).",
  44:"① 정책 사용 상태를 지정하고 ② 생성합니다. 운영 적용 전에는 <b>보고서 전용(Report-only)</b>으로 먼저 영향도를 확인하는 것을 권장하며, 보고서 전용은 <b>실제로 차단하지 않습니다</b>.",
  45:"정책 평가를 검증하기 위해 ① 대상 에이전트를 확인하고 ② Teams에서 에이전트와 커넥터를 실제로 실행해 트래픽을 발생시킵니다.",
@@ -148,21 +148,17 @@ EXTRA = {
       </figure>""",
  64: """
       <figure class="fig" id="s64-2">
-        <div class="fig-title"><span class="fig-num">3-2</span>에이전트 경고 확인 — 경고 상세 (지표·심각도·관련 엔터티)</div>
+        <div class="fig-title"><span class="fig-num">4-15</span>에이전트 경고 확인 — 경고 상세 (지표·심각도·관련 엔터티)</div>
         <a href="img/irm-3-2.png" target="_blank" rel="noopener"><img loading="lazy" src="img/irm-3-2.png" alt="경고 상세 - 지표·심각도·관련 엔터티"></a>
       </figure>
       <div class="note">① 경고를 열어 <b>심각도·위험 점수</b>를 확인하고, ② 우측 <b>경고 세부 정보</b> 패널에서 해당 경고와 연관된 <b>이벤트와 에이전트</b>를 파악합니다.</div>
       <figure class="fig" id="s64-3">
-        <div class="fig-title"><span class="fig-num">3-3</span>에이전트 경고 확인 — 활동 탐색기 (활동·프롬프트·응답 세부)</div>
+        <div class="fig-title"><span class="fig-num">4-16</span>에이전트 경고 확인 — 활동 탐색기 (활동·프롬프트·응답 세부)</div>
         <a href="img/irm-3-3.png" target="_blank" rel="noopener"><img loading="lazy" src="img/irm-3-3.png" alt="활동 탐색기 - 활동·프롬프트·응답 세부"></a>
       </figure>
-      <div class="note">① <b>활동 탐색기</b>에서 개별 활동을 선택하면 우측 상세 패널에 <b>활동 세부 정보</b>(작업·워크로드·AI 애플리케이션)와 함께, ② <b>프롬프트 세부 정보</b>(실제 입력 프롬프트·프롬프트 ID), ③ <b>응답 세부 사항</b>(응답 ID·중요한 정보 유형)이 표시됩니다. 이를 통해 <b>어떤 프롬프트가 어떤 응답·리소스로 이어졌는지</b>를 활동 종류별로 추적할 수 있습니다. <span class="hl-note">프롬프트·응답 원문은 <b>내부 위험 관리 조사자</b> 역할을 가진 사용자만 볼 수 있습니다.</span></div>
-      <figure class="fig" id="s64-4">
-        <div class="fig-title"><span class="fig-num">3-4</span>에이전트 경고 확인 — 에이전트 활동·증거 (관련 자산 식별)</div>
-        <a href="img/irm-3-4.png" target="_blank" rel="noopener"><img loading="lazy" src="img/irm-3-4.png" alt="에이전트 활동 - 증거·관련 자산"></a>
-      </figure>
-      <div class="note">① <b>에이전트 활동</b> 탭에서 ② 각 이벤트의 <b>증거</b>(예: 응답에 포함된 민감 정보 유형 — All Full Names·Diseases·Medical Terms 등)를 확인해 실제 어떤 자산·콘텐츠가 관련됐는지 식별합니다.</div>""",
+      <div class="note">① <b>활동 탐색기</b>에서 개별 활동을 선택하면 우측 상세 패널에 <b>활동 세부 정보</b>(작업·워크로드·AI 애플리케이션)와 함께, ② <b>프롬프트 세부 정보</b>(실제 입력 프롬프트·프롬프트 ID), ③ <b>응답 세부 사항</b>(응답 ID·중요한 정보 유형)이 표시됩니다. 이를 통해 <b>어떤 프롬프트가 어떤 응답·리소스로 이어졌는지</b>를 활동 종류별로 추적할 수 있습니다. <span class="hl-note">프롬프트·응답 원문은 <b>내부 위험 관리 조사자</b> 역할을 가진 사용자만 볼 수 있습니다.</span></div>""",
  80: """
+      <h2 class="ov-h step-h" style="margin-top:40px;" id="step-ch7-6">6단계 · 런타임 탐지 시나리오</h2>
       <figure class="fig" id="s80-2">
         <div class="fig-title"><span class="fig-num">6-1</span>런타임 탐지 시나리오 — 탐지 경고 목록 (Defender 경고)</div>
         <a href="img/rt-alerts.png" target="_blank" rel="noopener"><img loading="lazy" src="img/rt-alerts.png" alt="Defender 경고 목록 - AI 탐지"></a>
@@ -226,7 +222,7 @@ EXTRA = {
 EXTRA_ROWS = {
     "ch7": [
         (["6", "런타임 탐지 시나리오", "Defender > 사건 & 경고 / 고급 헌팅(AgentsInfo·CloudAppEvents)",
-          "실제 에이전트 실행에서 발생한 위험 신호를 준실시간 탐지·조사"], "s80-2"),
+          "실제 에이전트 실행에서 발생한 위험 신호를 준실시간 탐지·조사"], "step-ch7-6"),
     ],
 }
 
@@ -262,16 +258,19 @@ CH5_FIGS = [
 ]
 
 def ch5_custom_html():
+    # 단계 번호 -> 항목명 (개요 표 기준)
+    step_names = {int(r[0]): r[1].replace("\n", " ").strip() for r in CH5_TABLE[1:] if r[0].strip().isdigit()}
     ths = "".join(f"<th>{esc(x)}</th>" for x in CH5_TABLE[0][:-1])
     trs = []
     for r in CH5_TABLE[1:]:
         cells, tgt = r[:-1], r[-1]
         tds = "".join("<td>" + esc(x).replace("\n", "<br>") + "</td>" for x in cells)
-        if tgt:
-            trs.append(f'<tr class="jump" data-target="{tgt}" tabindex="0">{tds}</tr>')
+        if tgt and r[0].strip().isdigit() and int(r[0].strip()) > 0:
+            trs.append(f'<tr class="jump" data-target="step-ch4-{int(r[0].strip())}" tabindex="0">{tds}</tr>')
         else:
             trs.append(f"<tr>{tds}</tr>")
     steps = []
+    cur_step = None
     for fid, label, title, img, note in CH5_FIGS:
         if not img:
             imgs_html = '<div class="ph">스크린샷 준비 중 — 로그 수집 후 추가 예정</div>'
@@ -284,6 +283,13 @@ def ch5_custom_html():
             numspan = '<span class="fig-num" style="background:var(--surface-2);color:var(--text-soft);">예시</span>'
         else:
             numspan = f'<span class="fig-num">{label}</span>'
+        m = re.match(r'^(\d+)-', label)
+        if m and int(m.group(1)) != cur_step:
+            cur_step = int(m.group(1))
+            _sname = step_names.get(cur_step, "")
+            _htext = f"{cur_step}단계 · {esc(_sname)}" if _sname else f"{cur_step}단계"
+            _mt = ' style="margin-top:40px;"' if cur_step > 1 else ''
+            steps.append(f'<h2 class="ov-h step-h"{_mt} id="step-ch4-{cur_step}">{_htext}</h2>')
         steps.append(f"""
       <figure class="fig" id="{fid}">
         <div class="fig-title">{numspan}{esc(title)}</div>
@@ -353,6 +359,73 @@ CH8_FIGS = [
     ("callout",
      "<div class=\"scope-box\" id=\"s81f\"><p>이 장은 <b>Copilot Studio 에이전트</b>의 텔레메트리를 다룹니다. 반면 <b>Azure AI Foundry</b>로 만든 에이전트는 PPAC 데이터 내보내기가 아니라 <b>Foundry 포털의 Tracing</b>에서 Application Insights 리소스를 연결해 관측합니다(<b>OpenTelemetry → Azure Application Insights</b>).</p>"
      "<a class='cta-link' href='https://learn.microsoft.com/ko-kr/azure/foundry/observability/how-to/trace-agent-setup?tabs=python' target='_blank' rel='noopener'>Foundry 에이전트 추적 설정(공식 문서) →</a></div>"),
+]
+
+# ===== Chapter 5 (리스크 탐지) — DLP + CC 신규 섹션 (IRM 앞에 주입) =====
+CH5_OVERVIEW = [
+    ["#", "단계", "설정 위치", "확인 포인트", ""],
+    ["0", "감사 준비",
+     "Purview 포털 > 감사 > 감사 수집 상태 (+ 각 솔루션 역할)",
+     "감사 로그 수집 활성화(DLP·CC·IRM 경고 공통 전제), 관리자·분석가 역할 확보", "step-ch5-0"],
+    ["1", "DLP 정책 생성 — Copilot",
+     "Purview > 데이터 손실 방지 > 정책<br>(Microsoft 365 Copilot·Copilot Chat 위치)",
+     "민감 정보 유형(SIT) 포함 프롬프트 처리 차단", "step-ch5-1"],
+    ["2", "DLP 정책 생성 — Teams",
+     "Purview > 데이터 손실 방지 > 정책<br>(Teams 채팅·채널 메시지 위치)",
+     "SIT 포함 Teams 메시지 전송 차단", "step-ch5-2"],
+    ["3", "커뮤니케이션 규정 준수 정책 생성",
+     "Purview > 커뮤니케이션 규정 준수 > 정책<br>(AI 에이전트 비윤리적 상호작용 템플릿)",
+     "에이전트 상호작용의 부적절·비윤리·기밀 공유 탐지", "step-ch5-3"],
+    ["4", "IRM 에이전트 정책 · 경고 확인",
+     "Purview > 내부 위험 관리 > 정책 / 에이전트 경고",
+     "에이전트 활동 기반 위험 지표·경고, DLP·CC·IRM 3종 경고 교차 확인", "step-ch5-4"],
+]
+
+_PH_ALERT = ('<span class="hl-note">경고(alert)는 정책 활성화 후 백엔드에서 집계되어 '
+             '최대 24시간 내 생성됩니다. 이 실습 시점에는 아직 경고가 표시되지 않아 '
+             '스크린샷은 경고 생성 후 추가할 예정입니다.</span>')
+
+CH5_NEW_FIGS = [
+    ("callout", '<h2 class="ov-h step-h" id="step-ch5-0">0단계 · 감사 준비</h2>'),
+    ("s-audit", "0-1", "감사 준비 — 활성화 상태 확인", "img/slide-49.png",
+     "<code>Purview &gt; 감사 &gt; 감사 수집 상태</code>에서 감사 로그 수집이 켜져 있는지 먼저 확인합니다. <b>감사 로그가 꺼져 있으면 DLP·CC·IRM 정책을 만들어도 분석할 활동 이벤트 자체가 없어 지표·경고가 생성되지 않습니다.</b> 이 단계는 이후 세 정책 모두의 공통 전제입니다."),
+
+    ("callout", '<h2 class="ov-h step-h" style="margin-top:40px;" id="step-ch5-1">1단계 · DLP 정책 생성 — Microsoft 365 Copilot</h2>'),
+    ("s-dlp-cp", "1-1", "DLP 정책 생성 — 정보 형식 선택", "img/dlp-cp-type.png",
+     "<code>Purview &gt; 데이터 손실 방지 &gt; 정책 &gt; 정책 만들기</code>를 시작하면 <b>“어떤 정보를 보호하시겠습니까?”</b> 화면이 나옵니다. ① <b>엔터프라이즈 애플리케이션 및 디바이스</b>를 선택합니다. 이 범주에 <b>Microsoft Copilot 환경</b>이 포함되며, Teams / Microsoft 365 Copilot 채널에 게시된 <b>Copilot Studio 에이전트</b>의 상호작용도 이 위치에서 통제됩니다. 이어서 규정에서 <b>사용자 지정 정책</b>으로 시작합니다(Copilot 콘텐츠 보호는 사용자 지정 정책에서만 구성 가능). 이 작업에는 <b>Purview 데이터 보안 AI 관리자</b> 또는 규정 준수 관리자 역할이 필요합니다."),
+    ("dlp-cp-2", "1-2", "DLP 정책 생성 — 위치(Microsoft 365 Copilot 및 Copilot Chat)", "img/dlp-cp-loc.png",
+     "위치 단계에서 ① <b>Microsoft 365 Copilot 및 Copilot Chat</b> 위치만 켭니다. 에이전트가 이 채널을 통해 노출되므로, 이 위치가 에이전트에 전달되는 프롬프트에 적용됩니다."),
+    ("dlp-cp-3", "1-3", "DLP 정책 생성 — 규칙(조건·작업)", "img/dlp-cp-rule.png",
+     "규칙에서 ① 조건으로 <b>콘텐츠에 중요 정보 유형(SIT)</b> — 이 실습에서는 <code>Credit Card Number</code>를 지정하고, ② 작업으로 <b>Copilot이 콘텐츠를 처리하지 못하도록 제한 &gt; 프롬프트 처리 중</b>을 선택합니다. 즉 민감정보가 포함된 프롬프트의 처리를 차단하고 관리자에게 알립니다.<br><br><span class=\"hl-note\">요약의 <code>HasActivity: UploadText</code>는 '프롬프트 처리 차단' 동작이 내부적으로 표현된 값으로, 별도로 추가한 조건이 아닙니다.</span>"),
+    ("dlp-cp-4", "1-4", "DLP 정책 생성 — 정책 모드(즉시 켜기)", "img/dlp-cp-mode.png",
+     "정책 모드에서 ① <b>정책을 즉시 켭니다</b>를 선택합니다. 시뮬레이션 모드는 실제 차단 없이 영향도만 평가하므로, 실제 차단·경고를 확인하려면 즉시 켜기로 활성화합니다."),
+    ("dlp-cp-5", "1-5", "DLP 정책 생성 — 완료", "img/dlp-cp-done.png",
+     "정책이 생성되면 <b>DLP 경고</b>에서 정책 일치를 모니터링할 수 있습니다.<br><br><b>⚠️ Notice —</b> M365 Copilot 위치의 <b>프롬프트 처리 차단은 현재 미리 보기</b>로 순차 배포 중이며, 정책 활성화 전파에 시간이 걸립니다. 또한 <b>에이전트 자체 안전장치·모델 콘텐츠 필터가 DLP보다 먼저 응답을 막을 수</b> 있어, DLP 차단 UX와 경고는 지연되어 나타날 수 있습니다. 관련 기능·요건은 <a class='xref-ext' href='https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about' target='_blank' rel='noopener'>Microsoft 365 Copilot용 DLP(공식 문서)</a>를 참고하세요."),
+
+    ("callout", '<h2 class="ov-h step-h" style="margin-top:40px;" id="step-ch5-2">2단계 · DLP 정책 생성 — Teams</h2>'),
+    ("s-dlp-tm", "2-1", "DLP 정책 생성(Teams) — 정보 형식 선택", "img/dlp-tm-type.png",
+     "1단계와 동일하게 <code>Purview &gt; 데이터 손실 방지 &gt; 정책 &gt; 정책 만들기</code>에서 ① <b>엔터프라이즈 애플리케이션 및 디바이스</b>를 선택하고, 규정에서 <b>사용자 지정 정책</b>으로 시작합니다. 이번에는 <b>Teams 채팅·채널 메시지</b>를 대상으로 하는 별도 정책을 만듭니다."),
+    ("dlp-tm-2", "2-2", "DLP 정책 생성(Teams) — 위치(Teams 채팅 및 채널 메시지)", "img/dlp-tm-loc.png",
+     "위치 단계에서 ① <b>Teams 채팅 및 채널 메시지</b>만 켭니다(Exchange·SharePoint·OneDrive·장치 등 나머지 위치는 모두 끔). 에이전트가 <b>Teams 채널</b>에서 상호작용할 때의 메시지 데이터 유출을 통제합니다."),
+    ("dlp-tm-3", "2-3", "DLP 정책 생성(Teams) — 규칙(조건·작업)", "img/dlp-tm-rule.png",
+     "규칙에서 ① 조건으로 <b>콘텐츠에 중요 정보 유형(SIT)</b> — <code>Credit Card Number</code>(메시지 또는 첨부 파일 평가)를 지정하고, ② 작업으로 <b>Microsoft 365 위치의 콘텐츠 제한 또는 암호화</b>를 추가합니다. 이 작업은 보호 대상 SIT가 포함된 <b>Teams 채팅·채널 메시지 전송을 차단</b>(모든 사용자 차단)하고 관리자에게 알립니다."),
+    ("dlp-tm-4", "2-4", "DLP 정책 생성(Teams) — 정책 모드(즉시 켜기)", "img/dlp-tm-mode.png",
+     "정책 모드에서 ① <b>정책을 즉시 켭니다</b>를 선택합니다. 1단계와 동일하게, 실제 차단·경고를 확인하려면 시뮬레이션이 아닌 즉시 켜기로 활성화합니다."),
+    ("dlp-tm-5", "2-5", "DLP 정책 생성(Teams) — 완료", "img/dlp-tm-done.png",
+     "Teams용 DLP 정책 생성이 완료됩니다. Copilot용(1단계)과 Teams용(2단계)을 분리해 두면, 에이전트가 어느 표면(Copilot 채팅 / Teams 메시지)에서 민감정보를 다루는지에 따라 탐지·차단 지점을 명확히 구분할 수 있습니다."),
+
+    ("callout", '<h2 class="ov-h step-h" style="margin-top:40px;" id="step-ch5-3">3단계 · 커뮤니케이션 규정 준수 정책 생성</h2>'),
+    ("s-cc", "3-1", "커뮤니케이션 규정 준수 정책 생성 — 정책 템플릿", "img/cc-template.png",
+     "<code>커뮤니케이션 규정 준수 &gt; 정책 &gt; 정책 만들기</code>에서 ① <b>AI 에이전트의 비윤리적 상호작용 탐지</b> 템플릿을 선택합니다. 이 템플릿은 <b>AI 에이전트가 보낸 메시지</b>에서 모욕적·위협적 언어 등 부적절한 텍스트를 탐지합니다(단순 Copilot 채팅이 아니라 에이전트 대상)."),
+    ("cc-2", "3-2", "커뮤니케이션 규정 준수 정책 생성 — 구성(에이전트·검토자)", "img/cc-config.png",
+     "① 감독할 AI 에이전트에서 <b>생성된 에이전트 &gt; Microsoft Copilot Studio</b>를 선택하고, ② <b>검토자</b>를 지정합니다. 커뮤니케이션 규정 준수는 <b>Microsoft 365 Copilot과 Copilot Studio로 만든 에이전트</b>의 프롬프트·응답 상호작용을 분석합니다. 근거: <a class='xref-ext' href='https://learn.microsoft.com/en-us/purview/communication-compliance-copilot' target='_blank' rel='noopener'>생성형 AI 상호작용 탐지 정책(공식 문서)</a>."),
+    ("cc-3", "3-3", "커뮤니케이션 규정 준수 정책 생성 — 완료", "img/cc-done.png",
+     "커뮤니케이션 규정 준수 정책 생성이 완료됩니다. <b>정책 활성화에 최대 1시간, 통신 캡처(경고 생성)에 최대 24시간</b>이 소요됩니다."),
+
+    ("callout",
+     '<h2 class="ov-h step-h" style="margin-top:40px;" id="step-ch5-4">4단계 · IRM 에이전트 정책 생성 및 경고 확인</h2>'
+     '<p style="font-size:14.5px;color:var(--text-soft);margin:0 0 8px;">Purview <b>내부 위험 관리(IRM)</b>에서 에이전트 정책을 만들어 활동 기반 위험 신호를 수집하고 경고를 확인합니다. '
+     'DLP·CC·IRM은 서로 다른 계층의 신호로, 하나의 에이전트 활동에 대해 <b>세 가지 경고를 교차로 확인</b>할 수 있습니다.</p>'),
 ]
 
 def custom_section_html(table, steps_html):
@@ -436,7 +509,6 @@ for c in CH:
     </div>
     <h2 class="ov-h">전체 순서 한눈에 보기</h2>
     <div class="tw"><table><thead><tr>{ths}</tr></thead><tbody>{trs_html}</tbody></table></div>
-    <h2 class="ov-h">단계별 상세</h2>
     {steps_html}
     <div class="pagenav">__PN{c['num']}__</div>
   </section>""")
@@ -452,12 +524,13 @@ for c in CH:
     </div>
     <h2 class="ov-h">전체 순서 한눈에 보기</h2>
     <div class="tw"><table><thead><tr>{ths}</tr></thead><tbody>{trs_html}</tbody></table></div>
-    <h2 class="ov-h">단계별 상세</h2>
     {steps_html}
     <div class="pagenav">__PN{c['num']}__</div>
   </section>""")
         continue
     tbl = [list(r) for r in table_of(c["intro"])]
+    # 상세 단계가 없는 개요 표의 유령 행 제거 (문서 맥락 기준)
+    tbl = [r for r in tbl if not (c["id"] == "ch1" and r and r[0].strip() == "4")]
     if tbl and not tbl[0][-1].strip():
         for r in tbl:
             tail = r.pop().strip()
@@ -465,13 +538,17 @@ for c in CH:
                 r[-1] = (r[-1].rstrip() + "\n" + tail) if r[-1].strip() else tail
     hdr = tbl[0]
     ncol = len(hdr)
+    # 단계 번호 -> 항목명 매핑 (단계 헤더 텍스트로 사용)
+    step_names = {}
+    for r in tbl[1:]:
+        if r[0].strip().isdigit():
+            step_names[int(r[0].strip())] = r[1].replace("\n", " ").strip()
     ths = "".join(f"<th>{esc(x.replace(chr(10),' '))}</th>" for x in hdr)
     trs = []
     for r in tbl[1:]:
-        anc = anchor_for(c, r[0])
         tds = "".join("<td>" + esc(x).replace("\n", "<br>") + "</td>" for x in r)
-        if anc:
-            trs.append(f'<tr class="jump" data-target="s{anc}" tabindex="0">{tds}</tr>')
+        if r[0].strip().isdigit() and int(r[0].strip()) > 0:
+            trs.append(f'<tr class="jump" data-target="step-{c["id"]}-{int(r[0].strip())}" tabindex="0">{tds}</tr>')
         else:
             trs.append(f"<tr>{tds}</tr>")
     for row, tgt in EXTRA_ROWS.get(c["id"], []):
@@ -482,6 +559,7 @@ for c in CH:
             trs.append(f"<tr>{tds}</tr>")
     steps = []
     substep = {}
+    cur_step = None
     valid_steps = {int(r[0]) for r in tbl[1:] if r[0].strip().isdigit() and int(r[0]) > 0}
     last_valid = None
     for k, n in enumerate(range(c["range"][0], c["range"][1]+1), 1):
@@ -496,11 +574,18 @@ for c in CH:
             step = int(pairs[-1]) if pairs else k
         else:
             step = k
-        if valid_steps and step not in valid_steps:
+        if c["id"] == "ch5":
+            step = 4  # IRM 파트는 4단계 (4-1, 4-2... 연속 번호)
+        elif valid_steps and step not in valid_steps:
             step = last_valid if last_valid is not None else min(valid_steps)
         last_valid = step
         substep[step] = substep.get(step, 0) + 1
         label = f"{step}-{substep[step]}"
+        if c["id"] != "ch5" and step != cur_step:
+            cur_step = step
+            _sname = step_names.get(step, "")
+            _htext = f"{step}단계 · {esc(_sname)}" if _sname else f"{step}단계"
+            steps.append(f'<h2 class="ov-h step-h" id="step-{c["id"]}-{step}">{_htext}</h2>')
         d = DESC.get(n, "")
         code_html = ""
         if n in CODE:
@@ -523,16 +608,24 @@ for c in CH:
         {imgs}
       </figure>
       <div class="note">{d}</div>{EXTRA.get(n, "")}""")
+    if c["id"] == "ch5":
+        ths = "".join(f"<th>{esc(x)}</th>" for x in CH5_OVERVIEW[0][:-1])
+        _trs = []
+        for r in CH5_OVERVIEW[1:]:
+            cells, tgt = r[:-1], r[-1]
+            tds = "".join("<td>" + x + "</td>" for x in cells)
+            _trs.append(f'<tr class="jump" data-target="{tgt}" tabindex="0">{tds}</tr>' if tgt else f"<tr>{tds}</tr>")
+        trs = _trs
+        steps = [render_figs(CH5_NEW_FIGS)] + steps
     parts.append(f"""
   <section id="{c['id']}" class="page">
     <div class="hero">
       <span class="tag">Chapter {c['num']} · Microsoft Agent 365</span>
       <h1>{c['num']}. {esc(c['name'])}</h1>
-      <p>{esc(c['lead'])}</p>
+      <p>{c['lead'] if c['id']=='ch5' else esc(c['lead'])}</p>
     </div>
     <h2 class="ov-h">전체 순서 한눈에 보기</h2>
     <div class="tw"><table><thead><tr>{ths}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
-    <h2 class="ov-h">단계별 상세</h2>
     {''.join(steps)}
     <div class="pagenav">__PN{c['num']}__</div>
   </section>""")
@@ -566,9 +659,10 @@ code{background:var(--surface-2);padding:2px 6px;border-radius:5px;font-family:"
 html[data-theme="dark"] code{color:#ff9dd4;}
 .layout{display:flex;min-height:100vh;}
 .sidebar{width:290px;flex-shrink:0;background:var(--surface);border-right:1px solid var(--border);padding:26px 18px;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;margin-bottom:8px;letter-spacing:-.3px;line-height:1.3;}
-.brand .dot{width:24px;height:24px;border-radius:8px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 55%,var(--accent-pink) 100%);flex-shrink:0;}
-.brand-sub{font-size:12px;color:var(--text-soft);margin:0 0 22px 34px;}
+.brand{display:flex;align-items:flex-start;gap:9px;font-weight:700;font-size:14px;margin-bottom:8px;letter-spacing:-.3px;line-height:1.3;}
+.brand .dot{width:24px;height:24px;border-radius:8px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 55%,var(--accent-pink) 100%);flex:none;}
+.brand-logo{width:26px;height:26px;flex:none;margin-top:1px;}
+.brand-sub{font-size:12px;color:var(--text-soft);margin:0 0 22px 35px;}
 .nav-group{margin-bottom:18px;}
 .nav-group h4{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);margin:0 0 8px 8px;font-weight:700;}
 .nav-group a{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;color:var(--text);font-size:14px;margin-bottom:2px;}
@@ -594,6 +688,8 @@ html[data-theme="dark"] code{color:#ff9dd4;}
 h2.ov-h{font-size:20px;letter-spacing:-.3px;margin:38px 0 14px;padding:4px 0 10px 14px;position:relative;border-bottom:1px solid var(--border);}
 h2.ov-h::before{content:"";position:absolute;left:0;top:2px;bottom:10px;width:5px;border-radius:5px;background:linear-gradient(180deg,var(--accent),var(--accent-2) 55%,var(--accent-pink));}
 .ov-sub{color:var(--text-soft);font-size:14px;margin:0 0 12px;}
+h2.step-h{scroll-margin-top:20px;}
+h2.step-h::before{background:linear-gradient(180deg,var(--accent-2),var(--accent-pink));}
 .page-lead{color:var(--text-soft);font-size:15.5px;margin:0 0 8px;}
 .pname{font-weight:700;white-space:nowrap;}
 .portal-link{font-family:"Cascadia Code",Consolas,monospace;font-size:12.5px;white-space:nowrap;}
@@ -667,7 +763,11 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agent 365 초기 설정 및 구성 가이드</title>
+<title>에이전트 보안을 위한 Agent 365 활용 가이드</title>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <script>
 (()=>{const p=new URLSearchParams(location.search).get("scoutTheme");const s=localStorage&&localStorage.getItem?localStorage.getItem("a365theme"):null;const t=p||s||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);})();
 </script>
@@ -676,7 +776,7 @@ HTML = """<!DOCTYPE html>
 <body>
 <div class="layout">
 <aside class="sidebar">
-  <div class="brand"><span class="dot"></span><span>Agent 365 초기 설정 및 구성 가이드</span></div>
+  <div class="brand"><img class="brand-logo" src="img/a365-logo.png" alt="Agent 365" width="26" height="26"><span>에이전트 보안을 위한<br>Agent 365 활용 가이드</span></div>
   <div class="brand-sub">Copilot Studio · 관리 · 보안 실습 (0–8)</div>
   <nav class="nav-group">
     <h4>가이드</h4>
@@ -689,7 +789,7 @@ HTML = """<!DOCTYPE html>
 </aside>
 <main class="main"><div class="content">
   __SECTIONS__
-  <div class="footer">Microsoft Agent 365 초기 설정 및 구성 가이드 · 스크린샷은 Copilot Studio(New experience) 실습 기준 · 각 장 상단 표가 전체 순서입니다.</div>
+  <div class="footer">에이전트 보안을 위한 Agent 365 활용 가이드 · 스크린샷은 Copilot Studio(New experience) 실습 기준 · 각 장 상단 표가 전체 순서입니다.</div>
 </div></main>
 </div>
 <script>

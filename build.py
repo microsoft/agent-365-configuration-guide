@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import json, os, html
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -171,7 +171,7 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agent 365 초기 설정 및 구성 가이드</title>
+<title>에이전트 보안을 위한 Agent 365 활용 가이드</title>
 <script>
   (() => {
     const param = new URLSearchParams(window.location.search).get("scoutTheme");
@@ -331,7 +331,7 @@ figure.step .note b { color: var(--cp-text); }
 </aside>
 <main>
   <div class="hero">
-    <h1>Agent 365 초기 설정 및 구성 가이드</h1>
+    <h1>에이전트 보안을 위한 Agent 365 활용 가이드</h1>
     <p>Copilot Studio(New experience)로 에이전트를 만들고, 승인·배포·인벤토리·차단·조건부 액세스·리스크 탐지·런타임 보호·트래픽 모니터링까지 순서대로 구성하는 실습 가이드입니다. 왼쪽 목차에서 장을 선택하세요.</p>
   </div>
   __SECTIONS__
